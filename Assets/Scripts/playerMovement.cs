@@ -25,6 +25,7 @@ public class playerMovement : MonoBehaviour
     const string PLAYER_WALK_RIGHT_DOWN = "Player_Walk_Right_Down";
     const string PLAYER_WALK_DOWN = "Player_Walk_Down";
 
+
     //this is to change the walk speed to the dash speed
     public float activeMoveSpeed;
     public float dashSpeed = 4f;
@@ -38,6 +39,7 @@ public class playerMovement : MonoBehaviour
     {
         activeMoveSpeed = walkSpeed;
         rb = gameObject.GetComponent<Rigidbody2D>();
+
         animator = gameObject.GetComponent<Animator>();
     }
 
