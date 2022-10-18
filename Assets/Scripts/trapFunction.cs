@@ -10,6 +10,9 @@ public class trapFunction : MonoBehaviour
     [SerializeField] private float activationDelay;
     [SerializeField] private float activeTime;
 
+    public AudioSource HighSpike;
+    public AudioSource LowSpike;
+
     private Animator anim;
     private SpriteRenderer spriteRend;
 
@@ -45,17 +48,19 @@ public class trapFunction : MonoBehaviour
         //Turn sptite red to check for player triggering it
         triggered = true;
         anim.SetBool("activateWarning", true);   //turn red to warn player 
-
+        LowSpike.Play();
         //wait delay for treap to do damage
         yield return new WaitForSeconds(activationDelay);
         active = true;
         anim.SetBool("activateTrap", true);
-
+        HighSpike.Play();
         //Waits X sconds to deactivate trap
         yield return new WaitForSeconds(activeTime);
         active = false;
         triggered = false;
         anim.SetBool("activateWarning", false);
+        HighSpike.Play();
         anim.SetBool("activateTrap", false);
+        LowSpike.Play();
     }
 }
