@@ -32,6 +32,6 @@ public class playerBehavior : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Trigger!");
+        Debug.Log("Key Grabed!");
     }
 }
