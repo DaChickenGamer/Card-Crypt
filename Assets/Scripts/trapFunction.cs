@@ -59,7 +59,7 @@ public class trapFunction : MonoBehaviour
         active = false;
         triggered = false;
         anim.SetBool("activateWarning", false);
-        HighSpike.Play();
+        
         anim.SetBool("activateTrap", false);
         LowSpike.Play();
     }
