@@ -7,8 +7,8 @@ public class playerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    public float walkSpeed = .3f;
-    public float speedLimiter = .7f;
+    public static float walkSpeed = 4f;
+    public float speedLimiter = .55f;
     float inputHorizontal;
     float inputVertical;
 
@@ -27,9 +27,9 @@ public class playerMovement : MonoBehaviour
 
     //this is to change the walk speed to the dash speed
     public float activeMoveSpeed;
-    public float dashSpeed = 4f;
+    public float dashSpeed = 5f;
     //these are self explanitory
-    public float dashLength = .2f, dashCooldown = 3.5f;
+    public float dashLength = .3f, dashCooldown = 3.5f;
     //these are use to make it so you cant spam the dash
     public float dashCounter;
     public float dashCoolCounter;
@@ -44,6 +44,10 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(walkSpeed != 4)
+        {
+            activeMoveSpeed=walkSpeed;
+        }
         // W & S key inputs
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         // A & D key inputs

@@ -6,49 +6,52 @@ using UnityEngine;
 
 public class EnemyAi : MonoBehaviour
 {
-    public float speed;
-    public float checkRadius;
-    public float attackRadius;
-
-    public LayerMask whatIsPlayer;
-
+    public float speed = 3f;
     private Transform target;
     private Rigidbody2D rb;
-    private Vector2 movement;
-    public Vector3 dir;
+    private Transform target2;
 
-    private bool isInChaseRange;
-    private bool isInAttackRange;
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        rb = GetComponent<Rigidbody2D>();
-        target = GameObject.FindWithTag("Player").transform;
+        if (other.gameObject.tag == "Player")
+        {
+            target = other.transform;
+        }
     }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            target = null;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            target2= collision.transform;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            target2 = null;
+        }
+    }
+
     private void Update()
     {
-       
-
-        isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
-        isInAttackRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
-
-        dir = target.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        dir.Normalize();
-        movement = dir;
-    }
-    private void FixedUpdate()
-    {
-        if (isInChaseRange && !isInAttackRange)
+        
+        if (target2 != null)
         {
-            MoveCharacter(movement);
+            float step = 0;
+            transform.position = Vector2.MoveTowards(transform.position, target.position, step);
         }
-        if (isInAttackRange)
+        else if (target != null)
         {
-            rb.velocity = Vector2.zero;
+            float step = speed * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, target.position, step);
         }
-    }
-    private void MoveCharacter(Vector2 dir)
-    {
-        rb.MovePosition((Vector2)transform.position + (dir * speed * Time.deltaTime));
     }
 }
