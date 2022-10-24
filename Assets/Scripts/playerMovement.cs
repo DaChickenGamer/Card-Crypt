@@ -44,10 +44,9 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(activeMoveSpeed != 20||activeMoveSpeed!=10)
-        {
+        
             activeMoveSpeed=walkSpeed;
-        }
+        
         // W & S key inputs
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         // A & D key inputs
@@ -57,7 +56,7 @@ public class playerMovement : MonoBehaviour
         {
             if (dashCoolCounter <= 0 && dashCounter <= 0)
             {
-                activeMoveSpeed *= dashSpeed;
+                walkSpeed *= dashSpeed;
                 dashCounter = dashLength;
             }
         }
@@ -68,7 +67,7 @@ public class playerMovement : MonoBehaviour
 
             if (dashCounter <= 0)
             {
-                activeMoveSpeed = walkSpeed;
+                walkSpeed/=dashSpeed;
                 dashCoolCounter = dashCooldown;
             }
         }
