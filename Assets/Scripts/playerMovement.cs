@@ -44,7 +44,7 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(walkSpeed != 4)
+        if(activeMoveSpeed != 20||activeMoveSpeed!=10)
         {
             activeMoveSpeed=walkSpeed;
         }
