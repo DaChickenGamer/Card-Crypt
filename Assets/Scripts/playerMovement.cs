@@ -32,7 +32,7 @@ public class playerMovement : MonoBehaviour
     public float dashLength = .3f, dashCooldown = 3.5f;
     //these are use to make it so you cant spam the dash
     public float dashCounter;
-    public float dashCoolCounter;
+    public static float dashCoolCounter;
     // Start is called before the first frame update
     void Start()
     {
