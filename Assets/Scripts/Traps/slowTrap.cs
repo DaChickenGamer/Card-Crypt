@@ -15,7 +15,7 @@ public class slowTrap : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.name == "Player")   //collision detectores for activating trap and activating damage
+        if (collider.gameObject.name == "Player" && playerMovement.walkSpeed < 4)   //collision detectores for activating trap and activating damage
         {
             playerMovement.walkSpeed += movementReduction;
         }
