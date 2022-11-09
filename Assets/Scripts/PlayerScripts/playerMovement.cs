@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-
-    public static float walkSpeed = 4f;
+    public static float moveSpeed = 4f;
     public float speedLimiter = .55f;
-    float inputHorizontal;
-    float inputVertical;
+    public InputAction playerMove;
+
+    Vector2 moveDirection = Vector2.zero;
 
     //Animations and states
     Animator animator;
@@ -34,9 +35,18 @@ public class playerMovement : MonoBehaviour
     public float dashCounter;
     public static float dashCoolCounter;
     // Start is called before the first frame update
+
+    private void OnEnable()
+    {
+        playerMove.Enable();
+    }
+    private void OnDisable()
+    {
+        playerMove.Disable();
+    }
     void Start()
     {
-        activeMoveSpeed = walkSpeed;
+        activeMoveSpeed = moveSpeed;
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
     }
@@ -44,19 +54,15 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-            activeMoveSpeed=walkSpeed;
-        
-        // W & S key inputs
-        inputHorizontal = Input.GetAxisRaw("Horizontal");
-        // A & D key inputs
-        inputVertical = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        activeMoveSpeed = moveSpeed;
+
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
             if (dashCoolCounter <= 0 && dashCounter <= 0)
             {
-                walkSpeed *= dashSpeed;
+                moveSpeed *= dashSpeed;
                 dashCounter = dashLength;
             }
         }
@@ -67,7 +73,7 @@ public class playerMovement : MonoBehaviour
 
             if (dashCounter <= 0)
             {
-                walkSpeed/=dashSpeed;
+                moveSpeed/=dashSpeed;
                 dashCoolCounter = dashCooldown;
             }
         }
@@ -76,74 +82,11 @@ public class playerMovement : MonoBehaviour
         {
             dashCoolCounter -= Time.deltaTime;
         }
+
+        moveDirection = playerMove.ReadValue<Vector2>();
     }
-
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        // Makes sure the speed you move diagonally is controlled
-        if (inputHorizontal != 0 || inputVertical != 0)
-        {
-            if (inputHorizontal != 0 && inputVertical != 0)
-            {
-                inputHorizontal *= speedLimiter;
-                inputVertical *= speedLimiter;
-            }
-
-            rb.velocity = new Vector2(inputHorizontal * activeMoveSpeed, inputVertical * activeMoveSpeed);
-
-
-            if (inputHorizontal > 0 && inputVertical > 0)
-
-            {
-                ChangeAnimationState(PLAYER_WALK_RIGHT_UP);
-            }
-            else if (inputHorizontal < 0 && inputVertical > 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_LEFT_UP);
-            }
-            else if (inputHorizontal > 0 && inputVertical < 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_RIGHT_DOWN);
-            }
-            else if (inputHorizontal < 0 && inputVertical < 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_LEFT_DOWN);
-            }
-            else if (inputHorizontal < 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_LEFT);
-            }
-            else if (inputVertical > 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_UP);
-            }
-            else if (inputVertical < 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_DOWN);
-            }
-            else if (inputHorizontal > 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_RIGHT);
-            }
-        }
-        else
-        {
-            rb.velocity = new Vector2(0f, 0f);
-            ChangeAnimationState(PLAYER_IDLE);
-        }
-        //animation state changer
-        void ChangeAnimationState(string newState)
-        {
-            //Stop animation from interrupting itself
-            if (currentState == newState) return;
-
-            //play new animation
-            animator.Play(newState);
-
-
-
-            //Update current state
-            currentState = newState;
-        }
+        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);        
     }
 }

@@ -13,7 +13,7 @@ public class Dashing : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
     }
-    void Update() 
+    void Update()
     {
         if (playerMovement.dashCoolCounter > 0)
         {
@@ -23,7 +23,7 @@ public class Dashing : MonoBehaviour
         {
             ChangeAnimationState(DASH_READY);
         }
-        
+
     }
     void ChangeAnimationState(string newState)
     {
