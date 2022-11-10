@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e8ad13dbc96e9304fb802ec1c1b07457, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.38431373}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   projectile: {fileID: 3688544414904275036, guid: cbf6b04b537fa534b81900dce65eef8d, type: 3}
   spawnLocation: {fileID: 2429711370784322560}
   spawnRotation: {x: 0, y: 0, z: 0, w: 0}
+  detectionZone: {fileID: 0}
   spawnTime: 0.5
 --- !u!1 &7170881115307681296
 GameObject:
@@ -150,7 +151,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagTarget: Player
   detectedObjs: []
-  col: {fileID: 0}
 --- !u!61 &5192050925135627321
 BoxCollider2D:
   m_ObjectHideFlags: 0
