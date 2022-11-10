@@ -7,9 +7,12 @@ using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public static float moveSpeed = 4f;
+    public static float moveSpeed = 3f;
     public float speedLimiter = .55f;
     public InputAction playerMove;
+
+    float inputHorizontal;
+    float inputVertical;
 
     Vector2 moveDirection = Vector2.zero;
 
@@ -57,6 +60,10 @@ public class playerMovement : MonoBehaviour
 
         activeMoveSpeed = moveSpeed;
 
+        // W & S key inputs
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
+        // A & D key inputs
+        inputVertical = Input.GetAxisRaw("Vertical");
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
@@ -73,7 +80,7 @@ public class playerMovement : MonoBehaviour
 
             if (dashCounter <= 0)
             {
-                moveSpeed/=dashSpeed;
+                moveSpeed /= dashSpeed;
                 dashCoolCounter = dashCooldown;
             }
         }
@@ -87,6 +94,67 @@ public class playerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveDirection.x * activeMoveSpeed, moveDirection.y * activeMoveSpeed);        
+        // Makes sure the speed you move diagonally is controlled
+        if (inputHorizontal != 0 || inputVertical != 0)
+        {
+            if (inputHorizontal != 0 && inputVertical != 0)
+            {
+                inputHorizontal *= speedLimiter;
+                inputVertical *= speedLimiter;
+            }
+
+            rb.velocity = new Vector2(inputHorizontal * activeMoveSpeed, inputVertical * activeMoveSpeed);
+
+
+            if (inputHorizontal > 0 && inputVertical > 0)
+
+            {
+                ChangeAnimationState(PLAYER_WALK_RIGHT_UP);
+            }
+            else if (inputHorizontal < 0 && inputVertical > 0)
+            {
+                ChangeAnimationState(PLAYER_WALK_LEFT_UP);
+            }
+            else if (inputHorizontal > 0 && inputVertical < 0)
+            {
+                ChangeAnimationState(PLAYER_WALK_RIGHT_DOWN);
+            }
+            else if (inputHorizontal < 0 && inputVertical < 0)
+            {
+                ChangeAnimationState(PLAYER_WALK_LEFT_DOWN);
+            }
+            else if (inputHorizontal < 0)
+            {
+                ChangeAnimationState(PLAYER_WALK_LEFT);
+            }
+            else if (inputVertical > 0)
+            {
+                ChangeAnimationState(PLAYER_WALK_UP);
+            }
+            else if (inputVertical < 0)
+            {
+                ChangeAnimationState(PLAYER_WALK_DOWN);
+            }
+            else if (inputHorizontal > 0)
+            {
+                ChangeAnimationState(PLAYER_WALK_RIGHT);
+            }
+        }
+        else
+        {
+            rb.velocity = new Vector2(0f, 0f);
+            ChangeAnimationState(PLAYER_IDLE);
+        }
+        //animation state changer
+        void ChangeAnimationState(string newState)
+        {
+            //Stop animation from interrupting itself
+            if (currentState == newState) return;
+
+            //play new animation
+            animator.Play(newState);
+
+            rb.velocity = new Vector2(moveDirection.x * activeMoveSpeed, moveDirection.y * activeMoveSpeed);
+        }
     }
 }

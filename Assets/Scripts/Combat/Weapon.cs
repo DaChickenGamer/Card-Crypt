@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
     [TextArea]
     public string description;
     public int itemID;
-    public int Damage;
+    public int damage;
     public double Cooldown;
     public Sprite icon;
 }

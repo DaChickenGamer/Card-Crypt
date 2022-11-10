@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float currentEnemyHealth = 10;
 
-    // Update is called once per frame
-    void Update()
+
+    // amount is the amount of damage you want to apply
+
+    public void ApplyDamage(int amount)
     {
-        
+        currentEnemyHealth -= amount;
+        if (currentEnemyHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
