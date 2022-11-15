@@ -15,11 +15,11 @@ public class Dashing : MonoBehaviour
     }
     void Update() 
     {
-        if (playerMovement.dashCoolCounter > 0)
+        if (MeleePlayer.dashCoolCounter > 0||MagicPlayer.dashCoolCounter>0||RangedPlayer.dashCoolCounter>0)
         {
             ChangeAnimationState(DASH_WAITING);
         }
-        else if (playerMovement.dashCoolCounter <= 0)
+        else if (MeleePlayer.dashCoolCounter <= 0 || MagicPlayer.dashCoolCounter <= 0 || RangedPlayer.dashCoolCounter <= 0)
         {
             ChangeAnimationState(DASH_READY);
         }

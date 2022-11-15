@@ -8,16 +8,16 @@ public class slowTrap : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.gameObject.name == "Player" && playerMovement.walkSpeed > 2 && playerMovement.walkSpeed < 10)   //collision detectores for activating trap and activating damage
+        if (collider.gameObject.tag == "Player" && (MeleePlayer.walkSpeed > 2 && MeleePlayer.walkSpeed < 10|| RangedPlayer.walkSpeed > 2 && RangedPlayer.walkSpeed < 10 || MagicPlayer.walkSpeed > 2 && MagicPlayer.walkSpeed < 10 ))   //collision detectores for activating trap and activating damage
         {
-            playerMovement.walkSpeed /= movementReduction;
+            MeleePlayer.walkSpeed /= movementReduction;
         }
     }
     void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.name == "Player" && playerMovement.walkSpeed < 20)   //collision detectores for activating trap and activating damage
+        if (collider.gameObject.tag == "Player" && (MeleePlayer.walkSpeed < 20|| RangedPlayer.walkSpeed < 20 || MagicPlayer.walkSpeed < 20))   //collision detectores for activating trap and activating damage
         {
-            playerMovement.walkSpeed *= movementReduction;
+            MeleePlayer.walkSpeed *= movementReduction;
         }
     }
 }

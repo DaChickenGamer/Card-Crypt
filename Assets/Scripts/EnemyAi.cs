@@ -6,6 +6,12 @@ using UnityEngine;
 
 public class EnemyAi : MonoBehaviour
 {
+    public float spawnTime = 0.5f;
+
+    private float timeSinceSpawned = 0.5f;
+    public GameObject enemy;
+    public Transform spawnLocation;
+    public Quaternion spawnRotation;
     public float speed = 3f;
     private Transform target;
     private Rigidbody2D rb;
@@ -47,11 +53,22 @@ public class EnemyAi : MonoBehaviour
         {
             float step = 0;
             transform.position = Vector2.MoveTowards(transform.position, target.position, step);
+            timeSinceSpawned += Time.deltaTime;
+
+            if (timeSinceSpawned >= spawnTime)      //Then it spawns the arrows
+            {
+                Instantiate(enemy, spawnLocation.position, spawnRotation);     //Spawns the selected projectile in selected position and rotation
+                timeSinceSpawned = 0;   //resets timer
+            }
         }
         else if (target != null)
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, target.position, step);
+        }
+        else
+        {
+            timeSinceSpawned = 0.5f;   //resets timer
         }
     }
 }

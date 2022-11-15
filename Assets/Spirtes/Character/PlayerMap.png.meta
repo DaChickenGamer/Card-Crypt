@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2157,8 +2157,8 @@ TextureImporter:
       PlayerMap_21: 4577665
       PlayerMap_56: -224085845
       PlayerMap_43: 662945383
-      PlayerMap_44: 228471173
       PlayerMap_59: -1403076378
+      PlayerMap_44: 228471173
       PlayerMap_24: -1861902171
       PlayerMap_0: -1876204813
       PlayerMap_67: -245521197

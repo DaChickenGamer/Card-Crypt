@@ -7,7 +7,7 @@ public class SilverCoin : MonoBehaviour
     public AudioSource CollectCoin;
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.name == "Player")
+        if (collider.gameObject.tag == "Player")
         {
             CollectCoin.Play();
             PlayerVariablesAndItems.CoinCount+=10;
