@@ -8,7 +8,7 @@ public class weaponScript : MonoBehaviour
     int totalWeapons = 1;
     public int currentWeaponIndex;
 
-    public GameObject[] guns;
+    public GameObject[] weapons;
     public GameObject weaponHolder;
     public GameObject currentGun;
 
@@ -16,16 +16,16 @@ public class weaponScript : MonoBehaviour
     void Start()
     {
         totalWeapons = weaponHolder.transform.childCount;
-        guns = new GameObject[totalWeapons];
+        weapons = new GameObject[totalWeapons];
 
         for (int i = 0; i < totalWeapons; i++)
         {
-            guns[i] = weaponHolder.transform.GetChild(i).gameObject;
-            guns[i].SetActive(false);
+            weapons[i] = weaponHolder.transform.GetChild(i).gameObject;
+            weapons[i].SetActive(false);
         }
 
-        guns[0].SetActive(true);
-        currentGun = guns[0];
+        weapons[0].SetActive(true);
+        currentGun = weapons[0];
         currentWeaponIndex = 0;
     }
 
@@ -37,9 +37,9 @@ public class weaponScript : MonoBehaviour
         // Next Wewapon
         if (currentWeaponIndex < totalWeapons-1)
         {
-            guns[currentWeaponIndex].SetActive(false);
+            weapons[currentWeaponIndex].SetActive(false);
             currentWeaponIndex += 1;
-            guns[currentWeaponIndex].SetActive(true);
+            weapons[currentWeaponIndex].SetActive(true);
         }
     }
     if (Input.GetKeyDown(KeyCode.Q))
@@ -47,9 +47,9 @@ public class weaponScript : MonoBehaviour
         // Previous Wewapon
         if (currentWeaponIndex > 0)
         {
-            guns[currentWeaponIndex].SetActive(false);
+            weapons[currentWeaponIndex].SetActive(false);
             currentWeaponIndex -= 1;
-            guns[currentWeaponIndex].SetActive(true);
+            weapons[currentWeaponIndex].SetActive(true);
         }
     }
     }

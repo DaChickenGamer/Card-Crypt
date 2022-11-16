@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
-    public float currentEnemyHealth = 10;
+    public int  Health = 100;
 
-
-    // amount is the amount of damage you want to apply
-
-    public void ApplyDamage(int amount)
+    public void TakeDamage (int damage)
     {
-        currentEnemyHealth -= amount;
-        if (currentEnemyHealth <= 0)
+        Health -= damage;
+
+        if (Health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+    
+    public void Die()
+    {
+        Destroy(this.transform.parent.gameObject);
     }
 }
