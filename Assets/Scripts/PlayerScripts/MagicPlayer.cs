@@ -3,15 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MagicPlayer : MonoBehaviour
 {
-    Rigidbody2D rb;
-
-    public static float walkSpeed = 4f;
+    public Rigidbody2D rb;
+    public static float moveSpeed = 3f;
     public float speedLimiter = .55f;
+    public InputAction playerMove;
+
     float inputHorizontal;
     float inputVertical;
+
+    Vector2 moveDirection = Vector2.zero;
 
     //Animations and states
     Animator animator;
@@ -41,9 +45,18 @@ public class MagicPlayer : MonoBehaviour
 
 
     // Start is called before the first frame update
+
+    private void OnEnable()
+    {
+        playerMove.Enable();
+    }
+    private void OnDisable()
+    {
+        playerMove.Disable();
+    }
     void Start()
     {
-        activeMoveSpeed = walkSpeed;
+        activeMoveSpeed = moveSpeed;
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
     }
@@ -51,20 +64,19 @@ public class MagicPlayer : MonoBehaviour
     // Update is called once per frame
     public void Update() 
     {
-        
 
-        activeMoveSpeed =walkSpeed;
-        
+        activeMoveSpeed = moveSpeed;
+
         // W & S key inputs
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         // A & D key inputs
         inputVertical = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
             if (dashCoolCounter <= 0 && dashCounter <= 0)
             {
-                walkSpeed *= dashSpeed;
+                moveSpeed *= dashSpeed;
                 dashCounter = dashLength;
             }
         }
@@ -75,7 +87,7 @@ public class MagicPlayer : MonoBehaviour
 
             if (dashCounter <= 0)
             {
-                walkSpeed/=dashSpeed;
+                moveSpeed /= dashSpeed;
                 dashCoolCounter = dashCooldown;
             }
         }
@@ -84,9 +96,10 @@ public class MagicPlayer : MonoBehaviour
         {
             dashCoolCounter -= Time.deltaTime;
         }
-    }
 
-    void FixedUpdate()
+        moveDirection = playerMove.ReadValue<Vector2>();
+    }
+    private void FixedUpdate()
     {
 
         // Makes sure the speed you move diagonally is controlled
@@ -148,10 +161,7 @@ public class MagicPlayer : MonoBehaviour
             //play new animation
             animator.Play(newState);
 
-
-
-            //Update current state
-            currentState = newState;
+            rb.velocity = new Vector2(moveDirection.x * activeMoveSpeed, moveDirection.y * activeMoveSpeed);
         }
     }
 }
