@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 public class MagicPlayer : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public static float moveSpeed = 3f;
+    public static float walkSpeed = 3f;
     public float speedLimiter = .55f;
     public InputAction playerMove;
 
@@ -56,7 +56,7 @@ public class MagicPlayer : MonoBehaviour
     }
     void Start()
     {
-        activeMoveSpeed = moveSpeed;
+        activeMoveSpeed = walkSpeed;
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
     }
@@ -65,7 +65,7 @@ public class MagicPlayer : MonoBehaviour
     public void Update() 
     {
 
-        activeMoveSpeed = moveSpeed;
+        activeMoveSpeed = walkSpeed;
 
         // W & S key inputs
         inputHorizontal = Input.GetAxisRaw("Horizontal");
@@ -76,7 +76,7 @@ public class MagicPlayer : MonoBehaviour
         {
             if (dashCoolCounter <= 0 && dashCounter <= 0)
             {
-                moveSpeed *= dashSpeed;
+                walkSpeed *= dashSpeed;
                 dashCounter = dashLength;
             }
         }
@@ -87,7 +87,7 @@ public class MagicPlayer : MonoBehaviour
 
             if (dashCounter <= 0)
             {
-                moveSpeed /= dashSpeed;
+                walkSpeed /= dashSpeed;
                 dashCoolCounter = dashCooldown;
             }
         }
