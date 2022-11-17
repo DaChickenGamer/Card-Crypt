@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerBehavior : MonoBehaviour
 {
+    public GameObject Player;
     void Update()
-    {
+    { 
         // Testing Input To Take Damage
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -17,6 +19,18 @@ public class playerBehavior : MonoBehaviour
         {
             PlayerHeal(10);
             Debug.Log("Health: " + GameManager.gameManager._playerHealth.healthAmount);
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            Debug.Log("Health: " + GameManager.gameManager._playerHealth.healthAmount);
+        }
+        if (Player != null)
+        {
+            if (GameManager.gameManager._playerHealth.healthAmount <= 0)
+            {
+                Destroy(Player);
+                SceneManager.LoadScene("MainMenu");
+            }
         }
     }
 
