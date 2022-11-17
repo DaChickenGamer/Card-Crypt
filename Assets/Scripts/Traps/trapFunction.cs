@@ -27,7 +27,7 @@ public class trapFunction : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.name == "Player")   //collision detectores for activating trap and activating damage
+        if (collider.gameObject.tag == "Player")   //collision detectores for activating trap and activating damage
         {
             if (!triggered)
             {
