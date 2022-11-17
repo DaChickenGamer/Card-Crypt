@@ -22,15 +22,12 @@ public class enemyHealth : MonoBehaviour
     {
         Destroy(this.transform.parent.gameObject);
     }
-    public void OnTriggerEnter2D(Collider2D hitInfo)
+    public void OnTriggerEnter2D(Collider2D collider)
     {
-        //enemyHealth enemy = hitInfo.GetComponent<enemyHealth>();
-        if (Player != null)
+        string tag = collider.gameObject.tag;
+        if (tag == "Player")
         {
-            if (GameManager.gameManager._playerHealth.healthAmount <= 0)
-            {
-            Destroy(Player);
-            }
+            GameManager.gameManager._playerHealth.Dmg(enemyDamage);
         }
     }
 }
