@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3a005b25309c943919d5eaf496bc72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
 --- !u!61 &7497678349865426643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -263,7 +264,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d52a8714228f7841bac7bcd8799519d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   speedLimiter: 0.55
+  playerMove:
+    m_Name: Player Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ccf765dd-07a1-4e72-8dce-bfbc46a6a3eb
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   activeMoveSpeed: 0
   dashSpeed: 5
   dashLength: 0.3
