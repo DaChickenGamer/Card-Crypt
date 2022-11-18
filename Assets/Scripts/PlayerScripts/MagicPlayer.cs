@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 
 public class MagicPlayer : MonoBehaviour
 {
-
     public Rigidbody2D rb;
     public static float walkSpeed = 3f;
     public float speedLimiter = .55f;
@@ -17,6 +16,7 @@ public class MagicPlayer : MonoBehaviour
     float inputVertical;
 
     Vector2 moveDirection = Vector2.zero;
+
     //Animations and states
     Animator animator;
     string currentState;
@@ -31,6 +31,7 @@ public class MagicPlayer : MonoBehaviour
     const string PLAYER_WALK_RIGHT_DOWN = "Magic_Down_Right";
     const string PLAYER_WALK_DOWN = "Magic_Down";
 
+
     //this is to change the walk speed to the dash speed
     public float activeMoveSpeed;
     public float dashSpeed = 5f;
@@ -40,10 +41,19 @@ public class MagicPlayer : MonoBehaviour
     public float dashCounter;
     public static float dashCoolCounter;
 
-
+    
 
 
     // Start is called before the first frame update
+
+    private void OnEnable()
+    {
+        playerMove.Enable();
+    }
+    private void OnDisable()
+    {
+        playerMove.Disable();
+    }
     void Start()
     {
         activeMoveSpeed = walkSpeed;
@@ -52,9 +62,8 @@ public class MagicPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    public void Update() 
     {
-
 
         activeMoveSpeed = walkSpeed;
 
@@ -63,7 +72,7 @@ public class MagicPlayer : MonoBehaviour
         // A & D key inputs
         inputVertical = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
             if (dashCoolCounter <= 0 && dashCounter <= 0)
             {
@@ -87,9 +96,10 @@ public class MagicPlayer : MonoBehaviour
         {
             dashCoolCounter -= Time.deltaTime;
         }
-    }
 
-    void FixedUpdate()
+        moveDirection = playerMove.ReadValue<Vector2>();
+    }
+    private void FixedUpdate()
     {
 
         // Makes sure the speed you move diagonally is controlled
@@ -151,10 +161,7 @@ public class MagicPlayer : MonoBehaviour
             //play new animation
             animator.Play(newState);
 
-
-
-            //Update current state
-            currentState = newState;
+            rb.velocity = new Vector2(moveDirection.x * activeMoveSpeed, moveDirection.y * activeMoveSpeed);
         }
     }
 }

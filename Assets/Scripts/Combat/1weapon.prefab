@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWeaponIndex: 0
-  weapons: []
+  guns: []
   weaponHolder: {fileID: 0}
   currentGun: {fileID: 0}
 --- !u!1001 &1041757587754904185

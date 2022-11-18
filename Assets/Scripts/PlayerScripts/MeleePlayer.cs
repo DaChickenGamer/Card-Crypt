@@ -3,20 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class MeleePlayer : MonoBehaviour
 {
+    Rigidbody2D rb;
 
-    public Rigidbody2D rb;
-    public static float walkSpeed = 3f;
+    public static float walkSpeed = 4f;
     public float speedLimiter = .55f;
-    public InputAction playerMove;
-
     float inputHorizontal;
     float inputVertical;
 
-    Vector2 moveDirection = Vector2.zero;
     //Animations and states
     Animator animator;
     string currentState;
@@ -57,7 +53,7 @@ public class MeleePlayer : MonoBehaviour
     {
         
 
-        activeMoveSpeed = walkSpeed;
+        activeMoveSpeed =walkSpeed;
         
         // W & S key inputs
         inputHorizontal = Input.GetAxisRaw("Horizontal");
