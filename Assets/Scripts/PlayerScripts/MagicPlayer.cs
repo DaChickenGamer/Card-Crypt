@@ -41,19 +41,10 @@ public class MagicPlayer : MonoBehaviour
     public float dashCounter;
     public static float dashCoolCounter;
 
-    
+
 
 
     // Start is called before the first frame update
-
-    private void OnEnable()
-    {
-        playerMove.Enable();
-    }
-    private void OnDisable()
-    {
-        playerMove.Disable();
-    }
     void Start()
     {
         activeMoveSpeed = walkSpeed;
@@ -62,7 +53,7 @@ public class MagicPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update() 
+    public void Update()
     {
 
         activeMoveSpeed = walkSpeed;
@@ -72,7 +63,7 @@ public class MagicPlayer : MonoBehaviour
         // A & D key inputs
         inputVertical = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (dashCoolCounter <= 0 && dashCounter <= 0)
             {
@@ -96,10 +87,9 @@ public class MagicPlayer : MonoBehaviour
         {
             dashCoolCounter -= Time.deltaTime;
         }
-
-        moveDirection = playerMove.ReadValue<Vector2>();
     }
-    private void FixedUpdate()
+
+    void FixedUpdate()
     {
 
         // Makes sure the speed you move diagonally is controlled
@@ -161,7 +151,10 @@ public class MagicPlayer : MonoBehaviour
             //play new animation
             animator.Play(newState);
 
-            rb.velocity = new Vector2(moveDirection.x * activeMoveSpeed, moveDirection.y * activeMoveSpeed);
+
+
+            //Update current state
+            currentState = newState;
         }
     }
 }

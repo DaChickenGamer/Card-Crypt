@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class slowTrap : MonoBehaviour
 {
-    [SerializeField] private float movementReduction = 2.0f;
+    [SerializeField] private float movementReduction = 1.0f;
 
     void OnTriggerEnter2D(Collider2D collider)
     {

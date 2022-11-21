@@ -29,7 +29,7 @@ public class EnemyAi : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            target2= collision.transform;
+            target2 = collision.transform;
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -46,10 +46,7 @@ public class EnemyAi : MonoBehaviour
         if (target2 != null)
         {
             float step = 0;
-            transform.position = Vector2.MoveTowards(transform.position, target.position, step);
-            
-
-            
+            transform.position = Vector2.MoveTowards(transform.position, target.position, step); 
         }
         else if (target != null)
         {
