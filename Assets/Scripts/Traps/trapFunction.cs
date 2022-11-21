@@ -37,7 +37,9 @@ public class trapFunction : MonoBehaviour
             if (active)
             {
                 //take damage
-                Debug.Log("Trap dealt damage");
+                {
+                    GameManager.gameManager._playerHealth.Dmg(5);
+                }
             }
 
             

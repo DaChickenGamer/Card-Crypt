@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class trapProjectile : MonoBehaviour
 {
     //constant speed of the projectile
     public float moveSpeed = 5f;
@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
         string tag = collider.gameObject.tag;
         if (tag == "Player")
         {
-            //playerBehavior.PlayerTakeDmg(20);
+            GameManager.gameManager._playerHealth.Dmg(20);
         }
     }
 }
