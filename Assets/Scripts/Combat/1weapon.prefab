@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4229778245701932451}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.14169931, y: -0.2708001, z: 0.0056266785}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWeaponIndex: 0
-  guns: []
-  weaponHolder: {fileID: 0}
+  weapons: []
+  weaponHolder: {fileID: 4229778245701932451}
   currentGun: {fileID: 0}
 --- !u!1001 &1041757587754904185
 PrefabInstance:
@@ -122,6 +122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaceholderWand
       objectReference: {fileID: 0}
+    - target: {fileID: 3802764209551974703, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
 --- !u!1 &4229778244311239510 stripped
@@ -141,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73b348f1e8a6864ea2b324cb816dd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wand: {fileID: 0}
+  Wand: {fileID: 4229778244311239511}
   Spell: {fileID: 4164696276368096337, guid: 16452c6caa527a042948753e5f225d4c, type: 3}
   SpellSpeed: 1200
   ShootPoint: {fileID: 4229778244683383978}
@@ -230,6 +234,10 @@ PrefabInstance:
     - target: {fileID: 3802764209551974703, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
       propertyPath: m_Name
       value: Placeholder Fire wand
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802764209551974703, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
@@ -325,6 +333,10 @@ PrefabInstance:
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3802764209551974702, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802764209551974702, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.15500021
       objectReference: {fileID: 0}
@@ -350,7 +362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802764209551974702, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.38268343
+      value: -0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 3802764209551974702, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -362,11 +374,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802764209551974702, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 45
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 3802764209551974703, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
       propertyPath: m_Name
       value: Placeholder Bow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802764209551974703, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
@@ -393,7 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wand: {fileID: 1041757588760250644}
-  Spell: {fileID: 565707115276064671, guid: 9765f686e58e1ab46ba4b8386e71c121, type: 3}
+  Spell: {fileID: 3726054393108955998, guid: 2a4834c1fb0ca4b40b97152e68cc7cd9, type: 3}
   SpellSpeed: 1600
   ShootPoint: {fileID: 1041757588955383529}
   fireRate: 20

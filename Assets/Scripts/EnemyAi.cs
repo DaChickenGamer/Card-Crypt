@@ -51,6 +51,7 @@ public class EnemyAi : MonoBehaviour
         else if (target != null)
         {
             float step = speed * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, target.position, step);
         }
     }
 }

@@ -20,7 +20,7 @@ public class enemyHealth : MonoBehaviour
     
     public void Die()
     {
-        Destroy(this.transform.parent.gameObject);
+        Destroy(this.gameObject);
     }
     public void OnTriggerEnter2D(Collider2D collider)
     {
