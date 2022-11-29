@@ -4079,8 +4079,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 892021691}
-  melee: {fileID: 7497678349865426646, guid: 81e94bb0ba128ba4fb0f45109a0adc18, type: 3}
-  ranged: {fileID: 7497678349865426646, guid: d5110fd95708d024081cfe96af005223, type: 3}
+  melee: {fileID: 5278762171765594356, guid: 862ca9c3aa62dfa49b0c41bb0ba83259, type: 3}
+  ranged: {fileID: 164076533417356114, guid: e591814e03091534094f72454b584614, type: 3}
   magic: {fileID: 7497678349865426646, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
   spawnLocation: {fileID: 1956102380}
   spawnRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4559,6 +4559,9 @@ MonoBehaviour:
   Health: 100
   enemyDamage: 1
   Player: {fileID: 884883230}
+  XP: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  spawnRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &998592474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5518,6 +5521,9 @@ MonoBehaviour:
   Health: 100
   enemyDamage: 1
   Player: {fileID: 1280991943}
+  XP: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  spawnRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1296117349
 GameObject:
   m_ObjectHideFlags: 0
@@ -5574,6 +5580,9 @@ MonoBehaviour:
   Health: 100
   enemyDamage: 1
   Player: {fileID: 1321743353}
+  XP: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  spawnRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1341128340
 GameObject:
   m_ObjectHideFlags: 0
@@ -5892,6 +5901,9 @@ MonoBehaviour:
   Health: 100
   enemyDamage: 1
   Player: {fileID: 884883230}
+  XP: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  spawnRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1379009950
 GameObject:
   m_ObjectHideFlags: 0
@@ -7297,6 +7309,9 @@ MonoBehaviour:
   Health: 100
   enemyDamage: 1
   Player: {fileID: 1642733292}
+  XP: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  spawnRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1652195597
 PrefabInstance:
   m_ObjectHideFlags: 0
