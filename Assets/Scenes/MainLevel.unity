@@ -331,7 +331,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7578036692639668931, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
-    - {fileID: 1543896255348497600, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
 --- !u!4 &22381805 stripped
 Transform:
@@ -872,7 +871,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1075,7 +1074,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3402,7 +3401,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7578036692639668931, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
-    - {fileID: 1543896255348497600, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
 --- !u!4 &721375327 stripped
 Transform:
@@ -4308,7 +4306,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4514,7 +4512,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5384,7 +5382,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7578036692639668931, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
-    - {fileID: 1543896255348497600, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
 --- !u!4 &1139623581 stripped
 Transform:
@@ -6189,7 +6186,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7578036692639668931, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
-    - {fileID: 1543896255348497600, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
 --- !u!4 &1375230265 stripped
 Transform:
@@ -6381,7 +6377,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7578036692639668931, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
-    - {fileID: 1543896255348497600, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 79001854a6aa41d4e9bfbfc26853e63e, type: 3}
 --- !u!4 &1379951161 stripped
 Transform:
@@ -7626,7 +7621,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

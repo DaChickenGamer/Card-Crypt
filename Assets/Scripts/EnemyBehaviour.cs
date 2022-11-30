@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class EnemyBehaviour : MonoBehaviour
+public class enemyHealth : MonoBehaviour
 {
     public int Health = 100;
     public int enemyDamage = 1;
@@ -41,10 +41,11 @@ public class EnemyBehaviour : MonoBehaviour
             StartCoroutine(DelayedDoDamage());
         }
     }
+
     private IEnumerator DelayedDoDamage()
     {
         startingAttack = true;
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(3f);
         startingAttack = false;
         GameManager.gameManager._playerHealth.Dmg(enemyDamage);
     }
