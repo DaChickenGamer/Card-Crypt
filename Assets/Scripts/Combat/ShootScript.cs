@@ -5,13 +5,13 @@ using UnityEngine.InputSystem;
 
 public class ShootScript : MonoBehaviour
 {
-    public Transform Wand;
+    public Transform Weapon;
 
     Vector2 direction;
 
-    public GameObject Spell;
+    public GameObject Projectile;
 
-    public float SpellSpeed;
+    public float ProjectileSpeed;
 
     public Transform ShootPoint;
 
@@ -22,7 +22,7 @@ public class ShootScript : MonoBehaviour
     void Update()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        direction = mousePos - (Vector2)Wand.position;
+        direction = mousePos - (Vector2)Weapon.position;
         FaceMouse();
 
         if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Joystick1Button0))
@@ -30,18 +30,18 @@ public class ShootScript : MonoBehaviour
             if(Time.time > ReadyForNextShot)
             {
                 ReadyForNextShot = Time.time + 1/fireRate;
-                shoot();
+                Shoot();
             }
         }
     }
     void FaceMouse()
     {
-        Wand.transform.up = direction;
+        Weapon.transform.up = direction;
     }
-    void shoot()
+    void Shoot()
     {
-        GameObject SpellIns = Instantiate(Spell, ShootPoint.position, ShootPoint.rotation);
-        SpellIns.GetComponent<Rigidbody2D>().AddForce(SpellIns.transform.up * SpellSpeed);
-        Destroy(SpellIns, 3);
+        GameObject ProjectileIns = Instantiate(Projectile, ShootPoint.position, ShootPoint.rotation);
+        ProjectileIns.GetComponent<Rigidbody2D>().AddForce(ProjectileIns.transform.up * ProjectileSpeed);
+        Destroy(ProjectileIns, 3);
     }
 }
