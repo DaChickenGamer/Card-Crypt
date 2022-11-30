@@ -5,7 +5,6 @@ public class enemyHealth : MonoBehaviour
 {
     public int Health = 100;
     public int enemyDamage = 1;
-    public GameObject Player;
     public GameObject XP;
     public Transform spawnLocation;
     public Quaternion spawnRotation;
@@ -29,17 +28,21 @@ public class enemyHealth : MonoBehaviour
             xp--;
         }
     }
-
     public void Die()
     {
         Destroy(this.transform.parent.gameObject);
     }
-    public void OnTriggerEnter2D(Collider2D collider)
+    public void OnTriggerStay2D(Collider2D collider)
     {
-        string tag = collider.gameObject.tag;
-        if (tag == "Player")
-        {
-            GameManager.gameManager._playerHealth.Dmg(enemyDamage);
-        }
+    if (collider.gameObject.tag == "Player")
+    {
+        StartCoroutine(DelayedDoDamage());
+    }
+    }
+
+    private IEnumerator DelayedDoDamage()
+    {
+    yield return new WaitForSeconds(3f);
+    GameManager.gameManager._playerHealth.Dmg(enemyDamage);
     }
 }
