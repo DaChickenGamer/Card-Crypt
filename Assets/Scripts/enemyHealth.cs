@@ -22,6 +22,10 @@ public class enemyHealth : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+    private void Experience()
+    {
+        
+    }
     public void OnTriggerEnter2D(Collider2D collider)
     {
         string tag = collider.gameObject.tag;
