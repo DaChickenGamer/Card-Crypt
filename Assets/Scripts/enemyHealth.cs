@@ -32,12 +32,7 @@ public class enemyHealth : MonoBehaviour
 
     public void Die()
     {
-        
-        Destroy(this.gameObject);
-    }
-    private void Experience()
-    {
-        
+        Destroy(this.transform.parent.gameObject);
     }
     public void OnTriggerEnter2D(Collider2D collider)
     {
