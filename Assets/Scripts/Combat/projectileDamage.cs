@@ -11,7 +11,7 @@ public class projectileDamage : MonoBehaviour
     
     public void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        
+        damage = (int) basedamage;
         enemyHealth enemy = hitInfo.GetComponent<enemyHealth>();
         if (enemy != null)
         {
