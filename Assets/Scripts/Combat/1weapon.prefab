@@ -145,9 +145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73b348f1e8a6864ea2b324cb816dd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wand: {fileID: 4229778244311239511}
-  Spell: {fileID: 4164696276368096337, guid: 16452c6caa527a042948753e5f225d4c, type: 3}
-  SpellSpeed: 1200
+  Weapon: {fileID: 0}
+  Projectile: {fileID: 0}
+  ProjectileSpeed: 0
   ShootPoint: {fileID: 4229778244683383978}
   fireRate: 3
 --- !u!4 &4229778244311239511 stripped
@@ -258,9 +258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73b348f1e8a6864ea2b324cb816dd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wand: {fileID: 1041757587116003073}
-  Spell: {fileID: 7520937684121367263, guid: 0de858ff6eac9334299dcfac23ce0e5f, type: 3}
-  SpellSpeed: 900
+  Weapon: {fileID: 0}
+  Projectile: {fileID: 0}
+  ProjectileSpeed: 0
   ShootPoint: {fileID: 1041757587244155132}
   fireRate: 10
 --- !u!4 &1041757587116003073 stripped
@@ -408,9 +408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73b348f1e8a6864ea2b324cb816dd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wand: {fileID: 1041757588760250644}
-  Spell: {fileID: 3726054393108955998, guid: 2a4834c1fb0ca4b40b97152e68cc7cd9, type: 3}
-  SpellSpeed: 1600
+  Weapon: {fileID: 0}
+  Projectile: {fileID: 0}
+  ProjectileSpeed: 0
   ShootPoint: {fileID: 1041757588955383529}
   fireRate: 20
 --- !u!4 &1041757588955383529 stripped

@@ -5,12 +5,12 @@ using UnityEngine;
 public class Health
 {
     // Fields
-    int _currentHealth;
-    int _currentMaxHealth;
+    public static float _currentHealth;
+    public static float _currentMaxHealth;
     // _ is a naming convention on fields
 
     // Properties
-    public int healthAmount
+    public float healthAmount
     {
         // Sets the value for health
         get
@@ -22,7 +22,7 @@ public class Health
             _currentHealth = value;
         }
     }
-    public int MaxHealth
+    public float MaxHealth
     {
         // Sets the value for Max health
         get
@@ -35,20 +35,20 @@ public class Health
         }
     }
     // Constructor
-    public Health(int health, int maxHealth)
+    public Health(float health, float maxHealth)
     {
         // Sets the health and max health in unity
         _currentHealth = health;
         _currentMaxHealth = maxHealth;
     }
     // Methods
-    public void Dmg(int dmgAmount)
+    public void Dmg(float dmgAmount)
     {
         // Damages the player
         if (_currentHealth > 0)
             _currentHealth -= dmgAmount;
     }
-    public void Heal(int healAmount)
+    public void Heal(float healAmount)
     {
         // Tells if the character should get healed or not.
         if (_currentHealth < _currentMaxHealth)
