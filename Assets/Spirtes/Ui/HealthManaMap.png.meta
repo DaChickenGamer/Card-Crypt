@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,1309 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: HealthManaMap_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 3
+        width: 39
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b4226b2d3a868489afb2d6e22f8aec
+      internalID: -1701329337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419a89449456901408c519234eefd88a
+      internalID: -1494945871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1648cebb661d74b8a6e32632bdf817
+      internalID: 1529863076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 19
+        width: 39
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917c7e86b5a63714e841c8a4325b45a6
+      internalID: -2119567413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 19
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b454ae0d3c7e645952c2c75916aa90
+      internalID: -654477507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 19
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601ef361b4b4c694da763778c8e385f0
+      internalID: 1410989296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 19
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24381e866fe05254e998588049749176
+      internalID: -1312502994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_7
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 19
+        width: 35
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b361e2b1336204c4c82388904c8f1c85
+      internalID: 155899604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 19
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379abccf5eb7619439c5dad38eba7b7b
+      internalID: -1010691411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 19
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0701e9ab5a2b3742a11800d2a29b70a
+      internalID: -545532950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 19
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b159b8e837aab374e8f7468a03e67cbc
+      internalID: -859455302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 19
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a95a0c65c4b1cf42bdac61b93c45fc6
+      internalID: -624359052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 19
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c503798212cc984c8cf179c0fe55acb
+      internalID: 1383767958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 19
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0ea1f63c8b357409f3e3f068c97285
+      internalID: -686639119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_14
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17bd29b01114bb4db8dd7f7b26c868a
+      internalID: 1635671693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69e62b5e408c63439ebfa9474f8720f
+      internalID: 1756049026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 19
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0916bc62ab99f46438dfb8a4f6c0c381
+      internalID: 593504258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_17
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 19
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2d322bb7521fa4985aa5d2014099ba
+      internalID: 2029596664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_18
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 19
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc5ac21b6c46d14b8b0b385ab699a74
+      internalID: -920570299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 19
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd6e7856b3889c4bb3d751d844aa498
+      internalID: 1667617991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 19
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae2e4127afca20479f271f3b5ffa776
+      internalID: -126941689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_21
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 19
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecb6ba0665cc9343829a97b2135ad60
+      internalID: -1080448707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_22
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 19
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71514e306eb6f94aac7c4d1aa50a380
+      internalID: 1187900458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_23
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 19
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d1119f1a3d98746a8607ea321fb4d6
+      internalID: 715926371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_24
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 19
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9323bfb655440314da579de4bd0244c7
+      internalID: 516366178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_25
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 19
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da556310f50bfc43a1587e52996f3c9
+      internalID: 557423416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_26
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 19
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ceffb125a2cbb44989ec41b7c08e47
+      internalID: 1718254808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 19
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd811a07f21b19f45905bf63d942ea6d
+      internalID: -277358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_28
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 19
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053a9d824a90a3149af950d00d709f6d
+      internalID: 1629122425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 19
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afea11b8b179cf64c8351c46481cf118
+      internalID: 1425609153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_30
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 19
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9c8e09a4866e2468d54611a859933d
+      internalID: 314164618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_31
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 19
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3553c9ab34eed3c408c07aa910d9343b
+      internalID: -1386531947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_32
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 19
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcedb65e12da434381ee02c75038e24
+      internalID: -166307811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_33
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 19
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38305bdf6425750488efe784182e298c
+      internalID: 1228302752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_34
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 19
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d275ddc04c98fcd49bbb4d3864eaa278
+      internalID: -1431136490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_35
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 19
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e2dfd5c1d80704aac177d23af23a4f
+      internalID: -1987564412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_36
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 19
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a343b4a4d4bf60c41873e64440958e38
+      internalID: -780486642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_37
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 19
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840fbb2d13fac5c439248576dd8995cf
+      internalID: 1215743491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_38
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 19
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b84e493694700a45946f69b21683fca
+      internalID: 1892931457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_39
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 19
+        width: 3
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1a8127863c7a04ba254df21052141e
+      internalID: 1302706585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_40
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 19
+        width: 2
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32075c49e256ca54bb21bc98b3d03667
+      internalID: 1632191661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_41
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 19
+        width: 1
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d8f37befc7fc14993b51a78e09a862
+      internalID: 156688930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_42
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5453d4292c46314c813b0a38cea1819
+      internalID: 1388303716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_43
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043669ab9c97bb04badbc56304ef34c7
+      internalID: 774350854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_44
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c3fc72e2d1467429abb77673b3d5f2
+      internalID: 1190161990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_45
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3
+        width: 35
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dbc0e56d0d8e844b43cac7892735db
+      internalID: -1470134938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_46
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e6c77829f7cce448d150b8bafff0c8
+      internalID: 2077059235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_47
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053caadc5884b18409ddbe465c57879b
+      internalID: 2076041928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_48
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5156d0fd1af134e8c7cbc852f0139f
+      internalID: 188362246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 3
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f42baad8e95f644b0f3d0fddcc5b3d
+      internalID: -2030230944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_50
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdce3a4a2e05c774eb140a346a934f89
+      internalID: 1491437853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_51
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 3
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306a0ef2c51898940ba271751abbfde1
+      internalID: -363372446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_52
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4fa3b7dc5d14b43af525aa2c0a5c67
+      internalID: -588095898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_53
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 3
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2caed2dafa3c4994f9c5fa958452deec
+      internalID: -1773179298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_54
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa4970e49eda2c45be3c21e3323ac13
+      internalID: -1091385634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_55
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 3
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c8f2bd77f236747b8125a1941b7d98
+      internalID: -1867241089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_56
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95254f3b30cb8944bc537edd5c74db0
+      internalID: -806151788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_57
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 3
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d549ce062d1da146a37a9d3995b7ea5
+      internalID: -857618507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_58
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d4e426f2ed6194aac5364c0cec7d72
+      internalID: 1236182643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_59
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 3
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d2aea1fea3fe94b97ae116c7e78662
+      internalID: -1780725227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_60
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 3
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935747e83f321ae4db52b77fc6059abc
+      internalID: -1125938901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_61
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 3
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f153ec2ff40bf74ba095973d2a16e09
+      internalID: -1036755645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +1416,73 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HealthManaMap_23: 1187900458
+      HealthManaMap_14: -686639119
+      HealthManaMap_35: -1431136490
+      HealthManaMap_36: -1987564412
+      HealthManaMap_47: 2076041928
+      HealthManaMap_9: -1010691411
+      HealthManaMap_25: 516366178
+      HealthManaMap_29: 1629122425
+      HealthManaMap_20: 1667617991
+      HealthManaMap_61: 337003075
+      HealthManaMap_32: -1386531947
+      HealthManaMap_62: -1036755645
+      HealthManaMap_5: 1410989296
+      HealthManaMap_21: -126941689
+      HealthManaMap_46: 2077059235
+      HealthManaMap_38: 1215743491
+      HealthManaMap_33: -166307811
+      HealthManaMap_24: 715926371
+      HealthManaMap_11: -859455302
+      HealthManaMap_58: 1236182643
+      HealthManaMap_48: 188362246
+      HealthManaMap_16: 1756049026
+      HealthManaMap_37: -780486642
+      HealthManaMap_4: -654477507
+      HealthManaMap_63: -393567812
+      HealthManaMap_57: -857618507
+      HealthManaMap_18: 2029596664
+      HealthManaMap_52: -588095898
+      HealthManaMap_3: -2119567413
+      HealthManaMap_44: 1190161990
+      HealthManaMap_22: -1080448707
+      HealthManaMap_6: 602971214
+      HealthManaMap_45: -1470134938
+      HealthManaMap_49: -2030230944
+      HealthManaMap_26: 557423416
+      HealthManaMap_42: 1388303716
+      HealthManaMap_31: 314164618
+      HealthManaMap_27: 1718254808
+      HealthManaMap_53: -1773179298
+      HealthManaMap_54: -1091385634
+      HealthManaMap_65: 1448209091
+      HealthManaMap_13: 1383767958
+      HealthManaMap_0: -1701329337
+      HealthManaMap_40: 1302706585
+      HealthManaMap_43: 774350854
+      HealthManaMap_7: -1312502994
+      HealthManaMap_28: -277358
+      HealthManaMap_12: -624359052
+      HealthManaMap_15: 1635671693
+      HealthManaMap_55: -1867241089
+      HealthManaMap_34: 1228302752
+      HealthManaMap_10: -545532950
+      HealthManaMap_64: 600960784
+      HealthManaMap_2: 1529863076
+      HealthManaMap_17: 593504258
+      HealthManaMap_30: 1425609153
+      HealthManaMap_59: -1780725227
+      HealthManaMap_39: 1892931457
+      HealthManaMap_1: -1494945871
+      HealthManaMap_41: 1632191661
+      HealthManaMap_8: 155899604
+      HealthManaMap_60: -1125938901
+      HealthManaMap_50: 1491437853
+      HealthManaMap_56: -806151788
+      HealthManaMap_19: -920570299
+      HealthManaMap_51: -363372446
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
