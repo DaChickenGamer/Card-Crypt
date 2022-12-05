@@ -77,6 +77,10 @@ public class MeleePlayer : MonoBehaviour
             {
                 walkSpeed/=dashSpeed;
                 dashCoolCounter = dashCooldown;
+                if (walkSpeed != 4)
+                {
+                    walkSpeed = 4;
+                }
             }
         }
 

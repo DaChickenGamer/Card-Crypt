@@ -1,13 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class projectileDamage : MonoBehaviour
 {
-    public int damage = 1;
-
+    public static float basedamage = 1;
+    public static int damage;
+    
     public void OnTriggerEnter2D(Collider2D hitInfo)
     {
+        damage = (int) basedamage;
         enemyHealth enemy = hitInfo.GetComponent<enemyHealth>();
         if (enemy != null)
         {

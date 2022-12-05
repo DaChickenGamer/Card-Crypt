@@ -34,12 +34,12 @@ public class playerBehavior : MonoBehaviour
         }
     }
 
-    private void PlayerTakeDmg(int dmg)
+    private void PlayerTakeDmg(float dmg)
     {
         // Applies the damage function (subracting health)
         GameManager.gameManager._playerHealth.Dmg(dmg);
     }
-    private void PlayerHeal(int healing)
+    private void PlayerHeal(float healing)
     {
         // Applies the healing function (adding health)
         GameManager.gameManager._playerHealth.Heal(healing);

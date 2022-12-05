@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: f5d8d1f0d6c45c34886c48b74d096a03
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HealthManaMap_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 3
+        width: 39
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b4226b2d3a868489afb2d6e22f8aec
+      internalID: -1701329337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419a89449456901408c519234eefd88a
+      internalID: -1494945871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1648cebb661d74b8a6e32632bdf817
+      internalID: 1529863076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthManaMap_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 19
+        width: 39
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917c7e86b5a63714e841c8a4325b45a6
+      internalID: -2119567413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HealthManaMap_50: 1491437853
+      HealthManaMap_14: -686639119
+      HealthManaMap_35: -1431136490
+      HealthManaMap_36: -1987564412
+      HealthManaMap_47: 2076041928
+      HealthManaMap_9: -1010691411
+      HealthManaMap_25: 516366178
+      HealthManaMap_29: 1629122425
+      HealthManaMap_20: 1667617991
+      HealthManaMap_61: 337003075
+      HealthManaMap_32: -1386531947
+      HealthManaMap_62: -1036755645
+      HealthManaMap_5: 1410989296
+      HealthManaMap_21: -126941689
+      HealthManaMap_46: 2077059235
+      HealthManaMap_38: 1215743491
+      HealthManaMap_33: -166307811
+      HealthManaMap_24: 715926371
+      HealthManaMap_11: -859455302
+      HealthManaMap_58: 1236182643
+      HealthManaMap_48: 188362246
+      HealthManaMap_16: 1756049026
+      HealthManaMap_37: -780486642
+      HealthManaMap_4: -1701329337
+      HealthManaMap_63: -393567812
+      HealthManaMap_57: -857618507
+      HealthManaMap_18: 2029596664
+      HealthManaMap_52: -588095898
+      HealthManaMap_3: -2119567413
+      HealthManaMap_44: 1190161990
+      HealthManaMap_22: -1080448707
+      HealthManaMap_6: 602971214
+      HealthManaMap_45: -1470134938
+      HealthManaMap_49: -2030230944
+      HealthManaMap_26: 557423416
+      HealthManaMap_42: 1388303716
+      HealthManaMap_31: 314164618
+      HealthManaMap_27: 1718254808
+      HealthManaMap_53: -1773179298
+      HealthManaMap_54: -1091385634
+      HealthManaMap_65: 1448209091
+      HealthManaMap_13: 1383767958
+      HealthManaMap_0: -1991753417
+      HealthManaMap_40: 1302706585
+      HealthManaMap_43: 774350854
+      HealthManaMap_7: -1312502994
+      HealthManaMap_28: -277358
+      HealthManaMap_12: -624359052
+      HealthManaMap_15: 1635671693
+      HealthManaMap_55: -1867241089
+      HealthManaMap_34: 1228302752
+      HealthManaMap_10: -545532950
+      HealthManaMap_64: 600960784
+      HealthManaMap_17: 593504258
+      HealthManaMap_30: 1425609153
+      HealthManaMap_1: -1494945871
+      HealthManaMap_59: -1780725227
+      HealthManaMap_39: 1892931457
+      HealthManaMap_41: 1632191661
+      HealthManaMap_60: -1125938901
+      HealthManaMap_8: 155899604
+      HealthManaMap_19: -920570299
+      HealthManaMap_2: 1529863076
+      HealthManaMap_56: -806151788
+      HealthManaMap_23: 1187900458
+      HealthManaMap_51: -363372446
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
