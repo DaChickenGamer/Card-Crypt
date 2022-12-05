@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class EnemyAi : MonoBehaviour
 {
+    public float rotationSpeed;
     public float speed = 3f;
     private Transform target;
     private Rigidbody2D rb;
@@ -43,6 +44,7 @@ public class EnemyAi : MonoBehaviour
     private void Update()
     {
         
+        
         if (target2 != null)
         {
             float step = 0;
@@ -53,5 +55,8 @@ public class EnemyAi : MonoBehaviour
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, target.position, step);
         }
+
+
     }
+
 }
