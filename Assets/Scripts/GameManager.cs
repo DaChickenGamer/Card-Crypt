@@ -20,5 +20,8 @@ public class GameManager : MonoBehaviour
             gameManager = this;
         }
     }
-
+    private void Update()
+    {
+        PlayerSpawner.PlayerVarible = PlayerSpawner.PlayerVarible;
+    }
 }

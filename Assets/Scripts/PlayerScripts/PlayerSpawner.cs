@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerSpawner : MonoBehaviour
 {
+    public static  int PlayerVarible=0;
     public GameObject spawner;
     public GameObject melee;
     public GameObject ranged;
@@ -11,18 +13,33 @@ public class PlayerSpawner : MonoBehaviour
     public Transform spawnLocation;
     public Quaternion spawnRotation;
     public void Melee() 
-    { 
-        Instantiate(melee, spawnLocation.position, spawnRotation);
-        Destroy(spawner);
+    {
+        PlayerVarible += 1;
     }
     public void Ranged()
     {
-        Instantiate(ranged, spawnLocation.position, spawnRotation);
-        Destroy(spawner);
+        PlayerVarible += 2;
     }
     public void Magic()
     {
-        Instantiate(magic, spawnLocation.position, spawnRotation);
-        Destroy(spawner);
+        PlayerVarible+= 3;
+    }
+    public void FixedUpdate()
+    {
+        if(PlayerVarible == 1)
+        {
+            Instantiate(melee, spawnLocation.position, spawnRotation); 
+            Destroy(spawner);
+        }
+        else if(PlayerVarible == 2)
+        {
+            Instantiate(ranged, spawnLocation.position, spawnRotation);
+            Destroy(spawner);
+        }
+        else if (PlayerVarible == 3)
+        {
+            Instantiate(magic, spawnLocation.position, spawnRotation);
+            Destroy(spawner);
+        }
     }
 }
