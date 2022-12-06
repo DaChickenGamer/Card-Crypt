@@ -11,9 +11,11 @@ public class ShootScript : MonoBehaviour
 
     public GameObject Projectile;
 
-    public float ProjectileSpeed;
+    public float ProjectileSpeed, Damage;
 
     public Transform ShootPoint;
+
+    public static float damage;
 
     public float fireRate;
     float ReadyForNextShot;
@@ -21,6 +23,7 @@ public class ShootScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        damage = Damage;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = mousePos - (Vector2)Weapon.position;
         FaceMouse();

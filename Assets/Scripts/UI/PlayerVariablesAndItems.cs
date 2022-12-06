@@ -30,12 +30,11 @@ public class PlayerVariablesAndItems : MonoBehaviour
             Instantiate(level, spawnLocation.position, spawnRotation);
             Level += 1;
         }*/
-        projectileDamage.damage = (int)projectileDamage.basedamage;
         Coins.text = CoinCount.ToString();
         Keys.text = keyCount.ToString();
         Exp.text = xp.ToString();
         ExpTotal.text = xpTotal.ToString();
         Lvl.text = Level.ToString();
-        Damage.text = projectileDamage.damage.ToString();
+        Damage.text = ShootScript.damage.ToString();
     }
 }

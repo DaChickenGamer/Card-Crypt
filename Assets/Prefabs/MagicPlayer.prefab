@@ -871,7 +871,7 @@ Transform:
   - {fileID: 7497678351082567476}
   - {fileID: 7497678350033020295}
   - {fileID: 7497678351419015225}
-  - {fileID: 4229778244668618127}
+  - {fileID: 7374981315958667708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentWeaponIndex: 0
   weapons: []
-  weaponHolder: {fileID: 4229778245701932451, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+  weaponHolder: {fileID: 7374981315958667711}
   currentGun: {fileID: 0}
 --- !u!1 &7497678349913051642
 GameObject:
@@ -2436,7 +2436,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
---- !u!1001 &1301864495
+--- !u!1001 &6695166586953067548
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2451,13 +2451,49 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4229778243816792284, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: Weapon
+      value: 
+      objectReference: {fileID: 5953498708409115421}
+    - target: {fileID: 4229778243816792284, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: Projectile
+      value: 
+      objectReference: {fileID: 7520937684121367263, guid: 0de858ff6eac9334299dcfac23ce0e5f, type: 3}
+    - target: {fileID: 4229778243816792284, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 4229778243825661130, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: Wand
       value: 
       objectReference: {fileID: 3802764209551974702, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
+    - target: {fileID: 4229778243825661130, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: Weapon
+      value: 
+      objectReference: {fileID: 7374981316812351307}
+    - target: {fileID: 4229778243825661130, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: Projectile
+      value: 
+      objectReference: {fileID: 4164696276368096337, guid: 16452c6caa527a042948753e5f225d4c, type: 3}
+    - target: {fileID: 4229778243825661130, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 4229778244311239510, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229778245492269313, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: Weapon
+      value: 
+      objectReference: {fileID: 5953498707838739720}
+    - target: {fileID: 4229778245492269313, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: Projectile
+      value: 
+      objectReference: {fileID: 3726054393108955998, guid: 2a4834c1fb0ca4b40b97152e68cc7cd9, type: 3}
+    - target: {fileID: 4229778245492269313, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4229778245701932448, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: m_RootOrder
@@ -2465,15 +2501,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4229778245701932448, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.035
+      value: -0.016
       objectReference: {fileID: 0}
     - target: {fileID: 4229778245701932448, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.504
+      value: -0.445
       objectReference: {fileID: 0}
     - target: {fileID: 4229778245701932448, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0056266785
+      value: -7.1183734
       objectReference: {fileID: 0}
     - target: {fileID: 4229778245701932448, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2506,20 +2542,35 @@ PrefabInstance:
     - target: {fileID: 4229778245701932449, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: weaponHolder
       value: 
-      objectReference: {fileID: 4229778244668618124}
+      objectReference: {fileID: 7374981315958667711}
     - target: {fileID: 4229778245701932451, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
       propertyPath: m_Name
-      value: 1weapon
+      value: Weapon Holder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
---- !u!1 &4229778244668618124 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4229778245701932451, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
-  m_PrefabInstance: {fileID: 1301864495}
+--- !u!4 &5953498707838739720 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1041757588760250644, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+  m_PrefabInstance: {fileID: 6695166586953067548}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &4229778244668618127 stripped
+--- !u!4 &5953498708409115421 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1041757587116003073, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+  m_PrefabInstance: {fileID: 6695166586953067548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7374981315958667708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4229778245701932448, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
-  m_PrefabInstance: {fileID: 1301864495}
+  m_PrefabInstance: {fileID: 6695166586953067548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7374981315958667711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4229778245701932451, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+  m_PrefabInstance: {fileID: 6695166586953067548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7374981316812351307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4229778244311239511, guid: 87bb3d4affb6e6b43ae137e90aaba722, type: 3}
+  m_PrefabInstance: {fileID: 6695166586953067548}
   m_PrefabAsset: {fileID: 0}

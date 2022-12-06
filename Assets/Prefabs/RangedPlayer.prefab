@@ -7,6 +7,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4229778244341399854, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: Weapon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229778244341399854, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: Projectile
+      value: 
+      objectReference: {fileID: 3726054393108955998, guid: 2a4834c1fb0ca4b40b97152e68cc7cd9, type: 3}
+    - target: {fileID: 4229778244341399854, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229778244942927077, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: Weapon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229778244942927077, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: Projectile
+      value: 
+      objectReference: {fileID: 4164696276368096337, guid: 16452c6caa527a042948753e5f225d4c, type: 3}
+    - target: {fileID: 4229778244942927077, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229778244950868211, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: Weapon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229778244950868211, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: Projectile
+      value: 
+      objectReference: {fileID: 7520937684121367263, guid: 0de858ff6eac9334299dcfac23ce0e5f, type: 3}
+    - target: {fileID: 4229778244950868211, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374981315958667709, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: currentWeaponIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374981316213132480, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7497678349865426646, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
       propertyPath: m_Name
       value: RangedPlayer

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4229778245701932448}
   - component: {fileID: 4229778245701932449}
   m_Layer: 8
-  m_Name: 1weapon
+  m_Name: Weapon Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802764209551974703, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73b348f1e8a6864ea2b324cb816dd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Weapon: {fileID: 0}
+  Weapon: {fileID: 4229778244311239511}
   Projectile: {fileID: 0}
   ProjectileSpeed: 0
   ShootPoint: {fileID: 4229778244683383978}
@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802764209551974703, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4789c7e163af9144b31c79278059ec5, type: 3}
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73b348f1e8a6864ea2b324cb816dd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Weapon: {fileID: 0}
+  Weapon: {fileID: 1041757587116003073}
   Projectile: {fileID: 0}
   ProjectileSpeed: 0
   ShootPoint: {fileID: 1041757587244155132}
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e73b348f1e8a6864ea2b324cb816dd00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Weapon: {fileID: 0}
+  Weapon: {fileID: 1041757588760250644}
   Projectile: {fileID: 0}
   ProjectileSpeed: 0
   ShootPoint: {fileID: 1041757588955383529}

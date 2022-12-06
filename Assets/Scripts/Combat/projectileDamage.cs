@@ -6,16 +6,12 @@ using UnityEngine;
 
 public class projectileDamage : MonoBehaviour
 {
-    public static float basedamage = 1;
-    public static int damage;
-    
-    public void OnTriggerEnter2D(Collider2D hitInfo)
+        public void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        damage = (int) basedamage;
-        enemyHealth enemy = hitInfo.GetComponent<enemyHealth>();
+        EnemyBehaviour enemy = hitInfo.GetComponent<EnemyBehaviour>();
         if (enemy != null)
         {
-            enemy.TakeDamage(damage);
+            enemy.TakeDamage((int)ShootScript.damage);
             Destroy(gameObject);
         }
     }
