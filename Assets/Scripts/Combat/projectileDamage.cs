@@ -12,12 +12,17 @@ public class projectileDamage : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage((int)ShootScript.damage);
-                Destroy(gameObject);
+                StartCoroutine(DelayedDoDestroy());
             }
             else if (hitInfo.gameObject.tag == "Walls")
             {
-                Destroy(GameObject.FindWithTag("Projectile"));
+                StartCoroutine(DelayedDoDestroy());
             }
+        }
+        private IEnumerator DelayedDoDestroy()
+        {
+            yield return new WaitForSeconds(.03f);
+            Destroy(GameObject.FindWithTag("Projectile"));
         }
   
 
