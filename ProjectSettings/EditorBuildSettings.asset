@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 4092bbd9e0db8f744a6f411d7e97b500
   - enabled: 1
-    path: Assets/Scenes/MainLevel.unity
+    path: Assets/Scenes/Tutorial.unity
     guid: 7e04c7e8134f837439ea7cd272969ba2
   - enabled: 1
     path: Assets/Scenes/Settings.unity
@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 375e7a45aef6ea148b02bec466c42243
+  - enabled: 1
+    path: Assets/Scenes/FirstLevel.unity
+    guid: b8d920ed02305c44fbcf8351eef9ecd1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 872c1402e26af594da2b774f8b4c65b6, type: 2}
