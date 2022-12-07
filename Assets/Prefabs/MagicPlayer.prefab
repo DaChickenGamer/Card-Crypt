@@ -849,6 +849,7 @@ GameObject:
   - component: {fileID: 7497678349865426640}
   - component: {fileID: 21124471637153420}
   - component: {fileID: -2784319151736544850}
+  - component: {fileID: -6313563335081096857}
   m_Layer: 8
   m_Name: MagicPlayer
   m_TagString: Player
@@ -1041,6 +1042,21 @@ MonoBehaviour:
   weapons: []
   weaponHolder: {fileID: 7374981315958667711}
   currentGun: {fileID: 0}
+--- !u!114 &-6313563335081096857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497678349865426646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf1d0a1c66d9574e9536729bb796ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 00
+  slots:
+  - {fileID: 0}
 --- !u!1 &7497678349913051642
 GameObject:
   m_ObjectHideFlags: 0
