@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6313563335081096857, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: slots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6313563335081096857, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
+      propertyPath: isFull.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4229778244341399854, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
       propertyPath: Weapon
       value: 
@@ -111,6 +119,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7497678349865426646, guid: e1d32da2faf2ac740a014278979bc7d0, type: 3}
   m_PrefabInstance: {fileID: 8338580680347002740}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8706520732766690483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996656280417679778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf1d0a1c66d9574e9536729bb796ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 
+  slots: []
 --- !u!114 &6526368618153603714
 MonoBehaviour:
   m_ObjectHideFlags: 0
