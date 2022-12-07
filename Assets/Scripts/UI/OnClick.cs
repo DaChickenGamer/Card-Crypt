@@ -18,6 +18,7 @@ public class OnClick : MonoBehaviour
     }
     private void Update()
     {
+        PlayerSpawner.PlayerVarible = PlayerSpawner.PlayerVarible;
         if (Input.GetMouseButtonDown(0))
         {
             Cursor.SetCursor(PressedState, _hotspot, _cursorMode);
