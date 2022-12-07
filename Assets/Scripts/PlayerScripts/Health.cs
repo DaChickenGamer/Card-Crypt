@@ -54,6 +54,6 @@ public class Health
         if (_currentHealth < _currentMaxHealth)
             _currentHealth += healAmount;
         if (_currentHealth > _currentMaxHealth)
-            _currentMaxHealth = _currentMaxHealth;
+            _currentMaxHealth = _currentHealth;
     }
 }
