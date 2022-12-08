@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class playerBehavior : MonoBehaviour
 {
     public GameObject Player;
+    private Inventory inventory;
+
+    private void Awake()
+    {
+        inventory = new Inventory();
+    }
     void Update()
     { 
         // Testing Input To Take Damage
