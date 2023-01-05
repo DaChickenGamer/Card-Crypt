@@ -6,13 +6,6 @@ using UnityEngine.SceneManagement;
 public class playerBehavior : MonoBehaviour
 {
     public GameObject Player;
-    [SerializeField] private UI_Inventory uiInventory;
-    private Inventory inventory;
-
-    private void Awake()
-    {
-        inventory = new Inventory();
-    }
     void Update()
     { 
         // Testing Input To Take Damage

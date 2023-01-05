@@ -5,29 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class PlayerSpawner : MonoBehaviour
 {
-    public static int PlayerVarible=0;
+    public static int playerType = 0;
     public GameObject spawner;
     public GameObject melee;
     public GameObject ranged;
     public GameObject magic;
     public Transform spawnLocation;
     public Quaternion spawnRotation;
+
     public void FixedUpdate()
     {
-        if(PlayerVarible == 1)
+        // It's better to use a switch statement instead of multiple if-else statements
+        switch (playerType)
         {
-            Instantiate(melee, spawnLocation.position, spawnRotation); 
-            Destroy(spawner);
-        }
-        else if(PlayerVarible == 2)
-        {
-            Instantiate(ranged, spawnLocation.position, spawnRotation);
-            Destroy(spawner);
-        }
-        else if (PlayerVarible == 3)
-        {
-            Instantiate(magic, spawnLocation.position, spawnRotation);
-            Destroy(spawner);
+            case 1:
+                Instantiate(melee, spawnLocation.position, spawnRotation);
+                Destroy(spawner);
+                break;
+            case 2:
+                Instantiate(ranged, spawnLocation.position, spawnRotation);
+                Destroy(spawner);
+                break;
+            case 3:
+                Instantiate(magic, spawnLocation.position, spawnRotation);
+                Destroy(spawner);
+                break;
         }
     }
 }

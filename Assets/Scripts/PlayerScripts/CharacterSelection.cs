@@ -7,17 +7,17 @@ public class CharacterSelection : MonoBehaviour
 {
         public void Melee()
         {
-            PlayerSpawner.PlayerVarible += 1;
+            PlayerSpawner.playerType += 1;
         ChangeScene.PlayerScene++;
     }
         public void Ranged()
         {
-            PlayerSpawner.PlayerVarible += 2;
+            PlayerSpawner.playerType += 2;
         ChangeScene.PlayerScene++;
     }
         public void Magic()
         {
-            PlayerSpawner.PlayerVarible += 3;
+            PlayerSpawner.playerType += 3;
         ChangeScene.PlayerScene++;
     }
 }

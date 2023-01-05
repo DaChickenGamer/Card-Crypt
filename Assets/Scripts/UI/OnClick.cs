@@ -5,28 +5,32 @@ using UnityEngine;
 public class OnClick : MonoBehaviour
 {
     [SerializeField]
-    private Texture2D ReleasedState;
+    private Texture2D releasedState;
     [SerializeField]
-    private Texture2D PressedState;
+    private Texture2D pressedState;
 
-    private Vector2 _hotspot=Vector2.zero;
+private Vector2 hotspot = Vector2.zero;
     [SerializeField]
-    private CursorMode _cursorMode=CursorMode.Auto;
+    private CursorMode cursorMode = CursorMode.Auto;
+
     void Start()
     {
-        Cursor.SetCursor(ReleasedState, _hotspot, _cursorMode);
+        Cursor.SetCursor(releasedState, hotspot, cursorMode);
     }
+
     private void Update()
     {
-        PlayerSpawner.PlayerVarible = PlayerSpawner.PlayerVarible;
-        Health._currentHealth = Health._currentHealth;
+        // You don't need to reassign these variables in every frame
+        //PlayerSpawner.PlayerVarible = PlayerSpawner.PlayerVarible;
+        //Health._currentHealth = Health._currentHealth;
+
         if (Input.GetMouseButtonDown(0))
         {
-            Cursor.SetCursor(PressedState, _hotspot, _cursorMode);
+            Cursor.SetCursor(pressedState, hotspot, cursorMode);
         }
         if (Input.GetMouseButtonUp(0))
         {
-            Cursor.SetCursor(ReleasedState, _hotspot, _cursorMode);
+            Cursor.SetCursor(releasedState, hotspot, cursorMode);
         }
     }
 }

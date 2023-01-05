@@ -731,6 +731,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4586391979375067738, guid: 5fa4f09223a2fe148a2b70aeddd66a08, type: 3}
+      propertyPath: pressedState
+      value: 
+      objectReference: {fileID: 2800000, guid: 7f2633a6cd7564e4e8d0e5355d157d69, type: 3}
+    - target: {fileID: 4586391979375067738, guid: 5fa4f09223a2fe148a2b70aeddd66a08, type: 3}
+      propertyPath: releasedState
+      value: 
+      objectReference: {fileID: 2800000, guid: 879ed0720fa4095459bd130e076e60a7, type: 3}
     - target: {fileID: 4900739808616996141, guid: 5fa4f09223a2fe148a2b70aeddd66a08, type: 3}
       propertyPath: m_RootOrder
       value: 2
