@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerSceneTeleporter : MonoBehaviour
 {
-    public int sceneID;
+
         void OnTriggerEnter2D(Collider2D collider)
         {
             if (collider.gameObject.tag == "Player")
             {
-                SceneManager.LoadScene(sceneID);
+                SceneManager.LoadScene(ChangeScene.PlayerScene+1);
+            ChangeScene.PlayerScene++;
             }
         }
 }

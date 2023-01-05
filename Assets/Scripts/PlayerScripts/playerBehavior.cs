@@ -36,7 +36,7 @@ public class playerBehavior : MonoBehaviour
             if (GameManager.gameManager._playerHealth.healthAmount <= 0)
             {
                 Destroy(Player);
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene(3);
             }
         }
     }

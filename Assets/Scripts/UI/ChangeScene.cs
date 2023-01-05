@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    
+    public static int PlayerScene =4;
     public void MoveToScene(int sceneID)
     {
         SceneManager.LoadScene(sceneID);
     }
     [SerializeField] GameObject pauseMenu;
+    public void PlayerSceneDetector()
+    {
+        SceneManager.LoadScene(PlayerScene);
+    }
     public void Pause()
     {
         pauseMenu.SetActive(true);
