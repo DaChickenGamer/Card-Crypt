@@ -10,6 +10,8 @@ TagManager:
   - Projectile
   - EnemyHitbox
   - Walls
+  - PlayerHitbox
+  - ItemPickupHitbox
   layers:
   - Default
   - TransparentFX

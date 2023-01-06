@@ -5,6 +5,5 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public int[] items;
-    public bool[] isSelected;
     public GameObject[] slots;
 }

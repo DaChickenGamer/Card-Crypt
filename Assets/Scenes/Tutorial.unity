@@ -3887,7 +3887,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 644d9fdcd4c3d044bb1cf062c73122a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5227,7 +5227,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 644d9fdcd4c3d044bb1cf062c73122a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7396,7 +7396,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 644d9fdcd4c3d044bb1cf062c73122a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10034,7 +10034,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 644d9fdcd4c3d044bb1cf062c73122a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14661,6 +14661,10 @@ PrefabInstance:
     - target: {fileID: 6204036242366693755, guid: e823ad0033dced147b4fd0eb66b5a3bd, type: 3}
       propertyPath: m_Name
       value: Level Teleporter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659487886823692059, guid: e823ad0033dced147b4fd0eb66b5a3bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8439268445305497971, guid: e823ad0033dced147b4fd0eb66b5a3bd, type: 3}
       propertyPath: sceneID

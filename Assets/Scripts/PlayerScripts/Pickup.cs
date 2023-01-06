@@ -13,22 +13,23 @@ public class Pickup : MonoBehaviour
     {
         if (inventory == null)
         {
-            inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+            inventory = GameObject.FindGameObjectWithTag("ItemPickupHitbox").GetComponent<Inventory>();
             Debug.Log("Inventory Working");
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("ItemPickupHitbox") && Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("Touching Object");
             // spawn the sun button at the first available inventory slot ! 
             for (int i = 0; i < inventory.items.Length; i++)
             {
                 if (inventory.items[i] == 0)
                 { // check whether the slot is EMPTY
                     inventory.items[i] = 1; // makes sure that the slot is now considered FULL
-                    Instantiate(itemButton, inventory.slots[i].transform, false); // spawn the button so that the player can interact with it
+                    Instantiate(itemButton, inventory.slots[i].transform.position, inventory.slots[i].transform.rotation, inventory.slots[i].transform); // spawn the button so that the player can interact with it
                     Destroy(gameObject);
                     break;
                 }

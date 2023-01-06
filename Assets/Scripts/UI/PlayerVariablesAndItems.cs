@@ -11,11 +11,8 @@ public class PlayerVariablesAndItems : MonoBehaviour
     public Quaternion spawnRotation;
 
     public static int keyCount=0, CoinCount=0, Level=1, xpTotal, xp, xpAmount=2;
-    public static float exp=0, expTotal=10;
     public Text Coins;
     public Text Keys;
-    public Text Exp;
-    public Text ExpTotal;
     public Text Lvl;
     public Text Damage;
     void Update()
@@ -32,8 +29,6 @@ public class PlayerVariablesAndItems : MonoBehaviour
         }*/
         Coins.text = CoinCount.ToString();
         Keys.text = keyCount.ToString();
-        Exp.text = xp.ToString();
-        ExpTotal.text = xpTotal.ToString();
         Lvl.text = Level.ToString();
         Damage.text = ShootScript.damage.ToString();
     }
