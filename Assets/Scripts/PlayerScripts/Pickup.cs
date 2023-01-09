@@ -8,21 +8,36 @@ public class Pickup : MonoBehaviour
 
     private Inventory inventory;
     public GameObject itemButton;
+    GameObject ItemPickupHitbox;
+    bool canPickup = false;
 
     private void Update()
     {
+        ItemPickupHitbox = GameObject.FindGameObjectWithTag("ItemPickupHitbox");
         if (inventory == null)
         {
             inventory = GameObject.FindGameObjectWithTag("ItemPickupHitbox").GetComponent<Inventory>();
             Debug.Log("Inventory Working");
         }
+        if (canPickup == true)
+            ItemPickup();
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("ItemPickupHitbox") && Input.GetKeyDown(KeyCode.E))
+        canPickup = true;
+        Debug.Log("Entered Object");
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        canPickup = false;
+        Debug.Log("Exited Object");
+    }
+    private void ItemPickup()
+    {
+        if (ItemPickupHitbox && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("Touching Object");
+            Debug.Log("Picking Up Object");
             for (int i = 0; i < inventory.items.Length; i++)
             {
                 if (inventory.items[i] == 0)
@@ -34,6 +49,5 @@ public class Pickup : MonoBehaviour
                 }
             }
         }
-
     }
 }
