@@ -637,11 +637,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: ff738ad9-f461-489f-be49-048f91c43afa
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Card Dungeon Game (1)
+  organizationId: chickengamer
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
