@@ -5,10 +5,11 @@ public class enemyHealth : MonoBehaviour
 {
     public int Health = 100;
     public int enemyDamage = 1;
+    private bool startingAttack;
+
     public GameObject XP;
     public Transform spawnLocation;
     public Quaternion spawnRotation;
-    private bool startingAttack;
 
     public void TakeDamage (int damage)
     {
@@ -16,6 +17,8 @@ public class enemyHealth : MonoBehaviour
 
         if (Health <= 0)
         {
+
+            Instantiate(XP, spawnLocation.position, spawnRotation);
             Die();
         }
     }
@@ -27,7 +30,8 @@ public class enemyHealth : MonoBehaviour
     {
     if (collider.gameObject.tag == "Player")
         {
-            if(!startingAttack)
+            
+            if (!startingAttack)
             StartCoroutine(DelayedDoDamage());
         }
     }
