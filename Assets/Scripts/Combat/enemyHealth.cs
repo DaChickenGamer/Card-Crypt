@@ -17,17 +17,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (Health <= 0)
         {
             Die();
-            Experience();
-        }
     }
-    private void Experience()
-    {
-        int xp = Random.Range(5, PlayerVariablesAndItems.xpAmount);
-        while (xp > 0)
-        {
-            Instantiate(XP, spawnLocation.position, spawnRotation);
-            xp--;
-        }
     }
     public void Die()
     {

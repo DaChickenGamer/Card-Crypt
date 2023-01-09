@@ -23,7 +23,6 @@ public class Pickup : MonoBehaviour
         if (other.CompareTag("ItemPickupHitbox") && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Touching Object");
-            // spawn the sun button at the first available inventory slot ! 
             for (int i = 0; i < inventory.items.Length; i++)
             {
                 if (inventory.items[i] == 0)

@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb82b8d966250d54c99a35275d2c890a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  i: 3
+  index: 0
 --- !u!1 &1017373368
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb82b8d966250d54c99a35275d2c890a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  i: 1
+  index: 0
 --- !u!1 &1142508001
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb82b8d966250d54c99a35275d2c890a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  i: 4
+  index: 0
 --- !u!1 &1155878611
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb82b8d966250d54c99a35275d2c890a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  i: 2
+  index: 0
 --- !u!1 &3994945524000441750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1055,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &7497678349865426642
@@ -2288,9 +2288,6 @@ MonoBehaviour:
   spawnRotation: {x: 0, y: 0, z: 0, w: 0}
   Coins: {fileID: 7497678349422365636}
   Keys: {fileID: 7497678351342741849}
-  Exp: {fileID: 0}
-  ExpTotal: {fileID: 0}
-  Lvl: {fileID: 0}
   Damage: {fileID: 0}
 --- !u!114 &3041345381393048644
 MonoBehaviour:
