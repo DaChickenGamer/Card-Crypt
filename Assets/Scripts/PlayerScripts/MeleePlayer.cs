@@ -17,15 +17,15 @@ public class MeleePlayer : MonoBehaviour
     Animator animator;
     string currentState;
 
-    const string PLAYER_IDLE = "Melee_Idle";
-    const string PLAYER_WALK_LEFT_DOWN = "Melee_Down_Left";
-    const string PLAYER_WALK_LEFT = "Melee_Left";
-    const string PLAYER_WALK_LEFT_UP = "Melee_Up_Left";
-    const string PLAYER_WALK_UP = "Melee_Up";
-    const string PLAYER_WALK_RIGHT_UP = "Melee_Up_Right";
-    const string PLAYER_WALK_RIGHT = "Melee_Right";
-    const string PLAYER_WALK_RIGHT_DOWN = "Melee_Down_Right";
-    const string PLAYER_WALK_DOWN = "Melee_Down";
+    const string PLAYER_IDLE = "Melee_Idle_With_Hands";
+    const string PLAYER_WALK_LEFT_DOWN = "Melee_Down_Left_With_Hands";
+    const string PLAYER_WALK_LEFT = "Melee_Left_With_Hands";
+    const string PLAYER_WALK_LEFT_UP = "Melee_Up_Left_With_Hands";
+    const string PLAYER_WALK_UP = "Melee_Up_With_Hands";
+    const string PLAYER_WALK_RIGHT_UP = "Melee_Up_Right_With_Hands";
+    const string PLAYER_WALK_RIGHT = "Melee_Right_With_Hands";
+    const string PLAYER_WALK_RIGHT_DOWN = "Melee_Down_Righ_With_Hands";
+    const string PLAYER_WALK_DOWN = "Melee_Down_With_Hands";
 
 
     //this is to change the walk speed to the dash speed

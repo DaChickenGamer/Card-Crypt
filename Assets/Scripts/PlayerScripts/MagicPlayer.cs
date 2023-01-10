@@ -17,15 +17,15 @@ public class MagicPlayer : MonoBehaviour
     Animator animator;
     string currentState;
 
-    const string PLAYER_IDLE = "Magic_Idle";
-    const string PLAYER_WALK_LEFT_DOWN = "Magic_Down_Left";
-    const string PLAYER_WALK_LEFT = "Magic_Left";
-    const string PLAYER_WALK_LEFT_UP = "Magic_Up_Left";
-    const string PLAYER_WALK_UP = "Magic_Up";
-    const string PLAYER_WALK_RIGHT_UP = "Magic_Up_Right";
-    const string PLAYER_WALK_RIGHT = "Magic_Right";
-    const string PLAYER_WALK_RIGHT_DOWN = "Magic_Down_Right";
-    const string PLAYER_WALK_DOWN = "Magic_Down";
+    const string PLAYER_IDLE = "Magic_Idle_With_Hands";
+    const string PLAYER_WALK_LEFT_DOWN = "Magic_Down_Left_With_Hands";
+    const string PLAYER_WALK_LEFT = "Magic_Left_With_Hands";
+    const string PLAYER_WALK_LEFT_UP = "Magic_Up_Left_With_Hands";
+    const string PLAYER_WALK_UP = "Magic_Up_With_Hands";
+    const string PLAYER_WALK_RIGHT_UP = "Magic_Up_Right_With_Hands";
+    const string PLAYER_WALK_RIGHT = "Magic_Right_With_Hands";
+    const string PLAYER_WALK_RIGHT_DOWN = "Magic_Down_Right_With_Hands";
+    const string PLAYER_WALK_DOWN = "Magic_Down_With_Hands";
 
 
     //this is to change the walk speed to the dash speed

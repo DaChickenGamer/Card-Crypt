@@ -8,7 +8,6 @@ public class playerBehavior : MonoBehaviour
     public GameObject Player;
     void Update()
     {
-        PlayerHeal(100);
         // Testing Input To Take Damage
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -18,7 +17,8 @@ public class playerBehavior : MonoBehaviour
         // Testing Input To Heal
         if (Input.GetKeyDown(KeyCode.G))
         {
-            
+
+            PlayerHeal(10);
             Debug.Log("Health: " + GameManager.gameManager._playerHealth.healthAmount);
         }
         if (Input.GetKeyDown(KeyCode.T))

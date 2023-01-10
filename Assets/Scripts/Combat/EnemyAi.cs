@@ -12,16 +12,13 @@ public class EnemyAi : MonoBehaviour
     private Rigidbody2D rb;
     private Transform target2;
 
-    public GameObject XP;
-    public Transform spawnLocation;
-    public Quaternion spawnRotation;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
 
-            Instantiate(XP, spawnLocation.position, spawnRotation);
+            
             target = other.transform;
         }
     }

@@ -17,15 +17,15 @@ public class RangedPlayer : MonoBehaviour
     Animator animator;
     string currentState;
 
-    const string PLAYER_IDLE = "Ranged_Idle";
-    const string PLAYER_WALK_LEFT_DOWN = "Ranged_Down_Left";
-    const string PLAYER_WALK_LEFT = "Ranged_Left";
-    const string PLAYER_WALK_LEFT_UP = "Ranged_Up_Left";
-    const string PLAYER_WALK_UP = "Ranged_Up";
-    const string PLAYER_WALK_RIGHT_UP = "Ranged_Up_Right";
-    const string PLAYER_WALK_RIGHT = "Ranged_Right";
-    const string PLAYER_WALK_RIGHT_DOWN = "Ranged_Down_Right";
-    const string PLAYER_WALK_DOWN = "Ranged_Down";
+    const string PLAYER_IDLE = "Ranged_Idle_With_Hands";
+    const string PLAYER_WALK_LEFT_DOWN = "Ranged_Down_Left_With_Hands";
+    const string PLAYER_WALK_LEFT = "Ranged_Left_With_Hands";
+    const string PLAYER_WALK_LEFT_UP = "Ranged_Up_Left_With_Hands";
+    const string PLAYER_WALK_UP = "Ranged_Up_With_Hands";
+    const string PLAYER_WALK_RIGHT_UP = "Ranged_Up_Right_With_Hands";
+    const string PLAYER_WALK_RIGHT = "Ranged_Right_With_Hands";
+    const string PLAYER_WALK_RIGHT_DOWN = "Ranged_Down_Right_With_Hands";
+    const string PLAYER_WALK_DOWN = "Ranged_Down_With_Hands";
 
 
     //this is to change the walk speed to the dash speed
