@@ -6,25 +6,25 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Main Scenes/MainMenu.unity
     guid: 4092bbd9e0db8f744a6f411d7e97b500
   - enabled: 1
-    path: Assets/Scenes/Settings.unity
+    path: Assets/Scenes/Main Scenes/Settings.unity
     guid: 274cab06258425343ac7f872ca0dcdf9
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
+    path: Assets/Scenes/Main Scenes/Credits.unity
     guid: 375e7a45aef6ea148b02bec466c42243
   - enabled: 1
-    path: Assets/Scenes/Respawn.unity
+    path: Assets/Scenes/Gameplay/Respawn.unity
     guid: 7c1d4d5d0989e1e4ea42c0a9d6691dad
   - enabled: 1
-    path: Assets/Scenes/Character Selection.unity
+    path: Assets/Scenes/Gameplay/Character Selection.unity
     guid: 85f906d91b8815543b75e184d02b7535
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
+    path: Assets/Scenes/Game Levels/Tutorial.unity
     guid: 7e04c7e8134f837439ea7cd272969ba2
   - enabled: 1
-    path: Assets/Scenes/FirstLevel.unity
+    path: Assets/Scenes/Game Levels/FirstLevel.unity
     guid: b8d920ed02305c44fbcf8351eef9ecd1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 872c1402e26af594da2b774f8b4c65b6, type: 2}
