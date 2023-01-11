@@ -37,8 +37,7 @@ public class RangedPlayer : MonoBehaviour
     public float dashCounter;
     public static float dashCoolCounter;
 
-    
-
+  
 
     // Start is called before the first frame update
     void Start()
@@ -52,8 +51,7 @@ public class RangedPlayer : MonoBehaviour
     public void Update() 
     {
         
-
-        activeMoveSpeed =walkSpeed;
+        activeMoveSpeed = walkSpeed;
         
         // W & S key inputs
         inputHorizontal = Input.GetAxisRaw("Horizontal");
@@ -85,9 +83,7 @@ public class RangedPlayer : MonoBehaviour
         }
 
         if (dashCoolCounter > 0)
-        {
             dashCoolCounter -= Time.deltaTime;
-        }
     }
 
     void FixedUpdate()
