@@ -30,6 +30,7 @@ public class ArrowDispenser : MonoBehaviour
 
             if (timeSinceSpawned >= spawnTime)      //Then it spawns the arrows
             {
+                Debug.Log("trap");
                 Instantiate(projectile, spawnLocation.position, spawnRotation);     //Spawns the selected projectile in selected position and rotation
                 timeSinceSpawned = 0;   //resets timer
             }

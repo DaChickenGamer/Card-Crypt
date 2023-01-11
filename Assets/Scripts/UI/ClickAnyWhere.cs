@@ -11,4 +11,11 @@ public class ClickAnyWhere : MonoBehaviour
     {
         Destroy(objectToDestroy);
     }
+    public void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            Destroy(objectToDestroy);
+        }
+    }
 }

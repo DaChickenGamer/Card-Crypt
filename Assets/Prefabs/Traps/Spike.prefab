@@ -147,5 +147,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activationDelay: 0.5
   activeTime: 0.5
-  HighSpike: {fileID: 0}
-  LowSpike: {fileID: 0}
+  HighSpike: {fileID: 562911876186498283, guid: 5883d4d3b8943584382d342766e502a6, type: 3}
+  LowSpike: {fileID: 8990444920699862483, guid: df27240edb898004b8fb29da09c5777b, type: 3}

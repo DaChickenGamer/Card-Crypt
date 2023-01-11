@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
     {
         if ((collider.gameObject.tag == "Player") && (PlayerVariablesAndItems.keyCount > 0))
         {
+            Debug.Log("Opened door");
             openDoor.Play();
             PlayerVariablesAndItems.keyCount--;
             Destroy(gameObject);

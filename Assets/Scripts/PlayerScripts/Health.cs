@@ -50,6 +50,7 @@ public class Health
     }
     public void Heal(float healAmount)
     {
+        Debug.Log("healed");
         // Tells if the character should get healed or not.
         if (_currentHealth < _currentMaxHealth)
             _currentHealth += healAmount;

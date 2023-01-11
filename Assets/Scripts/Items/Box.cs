@@ -7,7 +7,6 @@ public class Box : MonoBehaviour
     public AudioSource Sliding;
     private float speed = 1;
     private float checkRadius = 912389;
-    private float attackRadius;
 
     public LayerMask whatIsPlayer;
 
@@ -16,8 +15,8 @@ public class Box : MonoBehaviour
     private Vector2 movement;
     private Vector3 dir;
 
-    private bool isInChaseRange;
-    private bool isInAttackRange;
+    private bool checkforplayer;
+    private bool isInpushingrange;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,22 +26,22 @@ public class Box : MonoBehaviour
     {
         
 
-        isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
-        isInAttackRange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
+        checkforplayer = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
+        isInpushingrange = Physics2D.OverlapCircle(transform.position, checkRadius, whatIsPlayer);
 
         dir = target.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         dir.Normalize();
         movement = dir;
     }
     private void FixedUpdate()
     {
-        if (isInChaseRange && !isInAttackRange)
+        if (checkforplayer && !isInpushingrange)
         {
             MoveCharacter(movement);
         }
-        if (isInAttackRange)
+        if (isInpushingrange)
         {
+            Debug.Log("touching box");
             rb.velocity = Vector2.zero;
         }
     }

@@ -26,6 +26,7 @@ private Vector2 hotspot = Vector2.zero;
 
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Clicked");
             Cursor.SetCursor(pressedState, hotspot, cursorMode);
         }
         if (Input.GetMouseButtonUp(0))

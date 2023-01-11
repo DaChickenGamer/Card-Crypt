@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc97a295e911d84fb11edc7eece7518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sliding: {fileID: 0}
+  Sliding: {fileID: 3205591182669860193, guid: db1e1070dcc7bb94faf8a1e099fd9118, type: 3}
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 256

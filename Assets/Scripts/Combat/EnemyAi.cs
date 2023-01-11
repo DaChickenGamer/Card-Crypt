@@ -6,11 +6,9 @@ using UnityEngine;
 
 public class EnemyAi : MonoBehaviour
 {
-    public float rotationSpeed;
-    public float speed = 3f;
-    private Transform target;
-    private Rigidbody2D rb;
-    private Transform target2;
+    public float speed = 3f;//the speed of the enemy
+    private Transform target;//targets the player when in the area
+    private Transform target2;//stops if the enemy is touching the player
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -18,7 +16,7 @@ public class EnemyAi : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
 
-            
+            Debug.Log("Player targeted");
             target = other.transform;
         }
     }
@@ -26,6 +24,7 @@ public class EnemyAi : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("player not longer targeted");
             target = null;
         }
     }
@@ -33,6 +32,7 @@ public class EnemyAi : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            Debug.Log("touching player");
             target2 = collision.transform;
         }
     }
@@ -40,6 +40,7 @@ public class EnemyAi : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("Player found but not touching");
             target2 = null;
         }
     }

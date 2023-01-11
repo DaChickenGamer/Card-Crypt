@@ -19,6 +19,7 @@ public class slowTrap : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player" && (MeleePlayer.walkSpeed < 20 || RangedPlayer.walkSpeed < 20 || MagicPlayer.walkSpeed < 20))   //collision detectores for activating trap and activating damage
         {
+            Debug.Log("you are slowed down");
             MeleePlayer.walkSpeed = 4;
             RangedPlayer.walkSpeed = 4;
             MagicPlayer.walkSpeed = 4;

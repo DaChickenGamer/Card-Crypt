@@ -9,6 +9,7 @@ public class GoldCoin : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            Debug.Log("collected gold coin");
             CollectCoin.Play();
             PlayerVariablesAndItems.CoinCount+=20;
             Destroy(gameObject);

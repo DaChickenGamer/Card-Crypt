@@ -9,6 +9,7 @@ public class SilverCoin : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            Debug.Log("collected silver coin");
             CollectCoin.Play();
             PlayerVariablesAndItems.CoinCount+=10;
             Destroy(gameObject);

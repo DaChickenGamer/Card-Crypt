@@ -17,7 +17,7 @@ public class enemyHealth : MonoBehaviour
 
         if (Health <= 0)
         {
-
+            Debug.Log("enemy killed");
             Instantiate(XP, spawnLocation.position, spawnRotation);
             Die();
         }

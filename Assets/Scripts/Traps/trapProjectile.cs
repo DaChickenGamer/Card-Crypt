@@ -31,6 +31,7 @@ public class trapProjectile : MonoBehaviour
         string tag = collider.gameObject.tag;
         if (tag == "Player")
         {
+            Debug.Log("trap damage");
             GameManager.gameManager._playerHealth.Dmg(20);
         }
     }

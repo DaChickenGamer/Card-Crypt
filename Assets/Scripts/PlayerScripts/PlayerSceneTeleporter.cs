@@ -10,7 +10,8 @@ public class PlayerSceneTeleporter : MonoBehaviour
         {
             if (collider.gameObject.tag == "Player")
             {
-                SceneManager.LoadScene(ChangeScene.PlayerScene+1);
+            Debug.Log("New Scene");
+            SceneManager.LoadScene(ChangeScene.PlayerScene+1);
             ChangeScene.PlayerScene++;
             }
         }

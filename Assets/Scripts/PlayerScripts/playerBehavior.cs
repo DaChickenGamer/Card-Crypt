@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class playerBehavior : MonoBehaviour
 {
+    
     public GameObject Player;
     void Update()
     {
+        
         // Testing Input To Take Damage
         if (Input.GetKeyDown(KeyCode.F))
         {

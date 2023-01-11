@@ -31,6 +31,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3889290553488931409, guid: 976ebabe8a22fac42914cf54ec8023dc, type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 1370381389548898214, guid: b1393691f7dacd647b69f9cb76cf2d0f, type: 3}
     - target: {fileID: 3889290553488931410, guid: 976ebabe8a22fac42914cf54ec8023dc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -105,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3889290553488931413, guid: 976ebabe8a22fac42914cf54ec8023dc, type: 3}
       propertyPath: m_Name
-      value: Keydoor Variant
+      value: Keydoor Variant Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 976ebabe8a22fac42914cf54ec8023dc, type: 3}
