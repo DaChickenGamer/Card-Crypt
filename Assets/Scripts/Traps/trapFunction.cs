@@ -6,7 +6,7 @@ public class trapFunction : MonoBehaviour
 {
     //[SerializeField] private float damage;    replace with working health code
 
-    [Header("Firetrap Timers")]
+    [Header("Spiketrap Timers")]
     [SerializeField] private float activationDelay;
     [SerializeField] private float activeTime;
 
