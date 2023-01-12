@@ -16,18 +16,7 @@ public class PlayerVariablesAndItems : MonoBehaviour
     public Text Damage;
     void Update()
     {
-        /*xp = (int)exp;
-        xpTotal = (int)expTotal;
-        if (exp >= expTotal)
-        {
-            xpAmount += 2;
-            exp -= expTotal;
-            expTotal *= 1.1f;
-            Instantiate(level, spawnLocation.position, spawnRotation);
-            Level += 1;
-        }*/
-        Coins.text = CoinCount.ToString();
-        Keys.text = keyCount.ToString();
-       // Damage.text = ShootScript.damage.ToString();
+        Coins.text = CoinCount.ToString(); // Displays the amount of coins
+        Keys.text = keyCount.ToString(); // Displays the amount of keys
     }
 }

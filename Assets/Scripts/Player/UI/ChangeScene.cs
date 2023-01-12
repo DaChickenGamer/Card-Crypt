@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public static int PlayerScene =4;
-    public void MoveToScene(int sceneID)
+    public static int PlayerScene = 4;
+    public void MoveToScene(int sceneID) // Changes scene based on the sceneID
     {
         SceneManager.LoadScene(sceneID);
     }
@@ -18,7 +18,7 @@ public class ChangeScene : MonoBehaviour
     public void Pause()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0f; // Makes it so nothing can move
     }
     public void Resume()
     {
@@ -32,7 +32,7 @@ public class ChangeScene : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)) // Goes to pause menu when clicking escape
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0f;

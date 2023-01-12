@@ -9,7 +9,7 @@ public class CopperCoin : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            Debug.Log("collect copper coin");
+            Debug.Log("Collected Copper Coin");
             CollectCoin.Play();
             PlayerVariablesAndItems.CoinCount+=5;
             Destroy(gameObject);

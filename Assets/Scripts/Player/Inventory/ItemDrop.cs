@@ -10,8 +10,9 @@ public class ItemDrop : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
-    public void SpawnDroppedItem()
+    public void SpawnDroppedItem() // Spawns the item below the player
     {
+        Debug.Log("Dropped Item");
         Vector2 playerPos = new Vector2(player.position.x, player.position.y);
         Instantiate(item, playerPos, Quaternion.identity);
     }

@@ -2,37 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class trapProjectile : MonoBehaviour
+public class TrapProjectile : MonoBehaviour
 {
-    //constant speed of the projectile
-    public float moveSpeed = 5f;
+    public float moveSpeed = 5f; //Speed of the projectile
 
-    //projectile lifetime
-    public float timeToLive = 5f;
+    public float timeToLive = 5f; //Projectile lifetime
 
     private float timeSinceSpawned = 0f;
 
-
-    // Update is called once per frame
     void Update()
     {
-        transform.position += moveSpeed * transform.right * Time.deltaTime;
+        transform.position += moveSpeed * transform.right * Time.deltaTime; // How fast the projectile should move and where it should move
 
-        timeSinceSpawned += Time.deltaTime;
+        timeSinceSpawned += Time.deltaTime; // Increments the time since spawned based on the ingame time
 
-        if (timeSinceSpawned > timeToLive)
+        if (timeSinceSpawned > timeToLive) // Compares how the project has been spawned and how long it has to live
         {
             Destroy(gameObject);
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collider)     //if an object with the tag "player" enter the collider, it adds collider to list
+    void OnTriggerEnter2D(Collider2D collider) 
     {
-        string tag = collider.gameObject.tag;
+        string tag = collider.gameObject.tag; 
         if (tag == "Player")
         {
-            Debug.Log("trap damage");
-            GameManager.gameManager._playerHealth.Dmg(20);
+            Debug.Log("Trap Damaging Player");
+            GameManager.gameManager._playerHealth.Dmg(20); // Damages The Player
         }
     }
 }

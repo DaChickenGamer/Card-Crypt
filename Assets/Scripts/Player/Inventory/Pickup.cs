@@ -15,21 +15,21 @@ public class Pickup : MonoBehaviour
     private void Update()
     {
         ItemPickupHitbox = GameObject.FindGameObjectWithTag("ItemPickupHitbox");
-        if (inventory == null)
+        if (inventory == null) // Checks if the inventory is in the game
         {
             inventory = GameObject.FindGameObjectWithTag("ItemPickupHitbox").GetComponent<Inventory>();
             Debug.Log("Inventory Working");
         }
-        if (canPickup == true)
+        if (canPickup == true) // Checks to see if an item can be picked up
             ItemPickup();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) // If the player goes over the object it can be picked up
     {
         canPickup = true;
         Debug.Log("Entered Object");
     }
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other) // When the player leaves the object they can no longer pick it up
     {
         canPickup = false;
         Debug.Log("Exited Object");
@@ -41,10 +41,10 @@ public class Pickup : MonoBehaviour
             Debug.Log("Picking Up Object");
             for (int i = 0; i < inventory.items.Length; i++)
             {
-                if (inventory.items[i] == 0)
-                { // check whether the slot is EMPTY
-                    inventory.items[i] = 1; // makes sure that the slot is now considered FULL
-                    Instantiate(itemButton, inventory.slots[i].transform.position, inventory.slots[i].transform.rotation, inventory.slots[i].transform); // spawn the button so that the player can interact with it
+                if (inventory.items[i] == 0) // Checks if the slot is empty
+                {
+                    inventory.items[i] = 1; // Makes the slot considered full
+                    Instantiate(itemButton, inventory.slots[i].transform.position, inventory.slots[i].transform.rotation, inventory.slots[i].transform);
                     Destroy(gameObject);
                     break;
                 }

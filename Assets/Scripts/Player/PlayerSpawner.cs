@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerSpawner : MonoBehaviour
 {
-    public static int playerType = 0;//
+    public static int playerType = 0;
     public GameObject spawner;
     public GameObject melee;
     public GameObject ranged;
@@ -19,17 +19,17 @@ public class PlayerSpawner : MonoBehaviour
         switch (playerType)
         {
             case 1:
-                Debug.Log("melee selected");
+                Debug.Log("Melee selected");
                 Instantiate(melee, spawnLocation.position, spawnRotation);
                 Destroy(spawner);
                 break;
             case 2:
-                Debug.Log("ranged selected");
+                Debug.Log("Ranged selected");
                 Instantiate(ranged, spawnLocation.position, spawnRotation);
                 Destroy(spawner);
                 break;
             case 3:
-                Debug.Log("magic ");
+                Debug.Log("Magic ");
                 Instantiate(magic, spawnLocation.position, spawnRotation);
                 Destroy(spawner);
                 break;

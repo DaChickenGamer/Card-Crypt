@@ -13,9 +13,10 @@ public class ClickAnyWhere : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown) // Checks for any input
         {
-            Destroy(objectToDestroy);
+            Destroy(objectToDestroy); // Destorys screen and moves on
+            Debug.Log("Countined");
         }
     }
 }

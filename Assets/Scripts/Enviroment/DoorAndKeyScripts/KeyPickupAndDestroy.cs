@@ -9,9 +9,10 @@ public class KeyPickupAndDestroy : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            CollectKey.Play();
-            PlayerVariablesAndItems.keyCount ++;
-            Destroy (gameObject);
+            Debug.Log("Picked Up Key");
+            CollectKey.Play(); // Plays key noise when picking up the key
+            PlayerVariablesAndItems.keyCount ++; // Adds key to total number of keys
+            Destroy (gameObject); // Destroys the key on the ground
         }
     }
 }

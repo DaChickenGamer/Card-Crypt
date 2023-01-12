@@ -9,7 +9,7 @@ public class PlayerDetection : MonoBehaviour
 
     public List<Collider2D> detectedObjs = new List<Collider2D> ();
 
-    void OnTriggerEnter2D(Collider2D collider)     //if an object with the tag "player" enter the collider, it adds collider to list
+    void OnTriggerEnter2D(Collider2D collider)     // If an object with the tag "player" enter the collider, it adds collider to list
     {
         if(collider.gameObject.tag == tagTarget)
         {
@@ -17,7 +17,7 @@ public class PlayerDetection : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D collider)       //if an object with the tag "player" exits the collider, it removes collider from list
+    void OnTriggerExit2D(Collider2D collider)  //If an object with the tag "player" exits the collider, it removes collider from list
     {
         if (collider.gameObject.tag == tagTarget)
         {

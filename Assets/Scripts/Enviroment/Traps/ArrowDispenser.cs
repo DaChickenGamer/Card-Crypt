@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class ArrowDispenser : MonoBehaviour
 {
-    //Select the "projectile" object to spawn
-    public GameObject projectile;
+    public GameObject projectile; //Select the "projectile" object to spawn
 
-    //Location to spawn "projectile"
-    public Transform spawnLocation;
+    public Transform spawnLocation; //Location to spawn "projectile"
 
-    //Rotaion of "projectile"
-    public Quaternion spawnRotation;
+    public Quaternion spawnRotation; // Rotaion of "projectile"
 
     public PlayerDetection detectionZone;
 
@@ -20,25 +17,23 @@ public class ArrowDispenser : MonoBehaviour
     //Track time since last "projectile" spawn
     private float timeSinceSpawned = 0.5f;
 
-
-    //How many Arrows are spawned
     void Update()
     {
-        if (detectionZone.detectedObjs.Count > 0)   //if the list count in player detection is greater then 0
+        if (detectionZone.detectedObjs.Count > 0)  //If the list count in player detection is greater then 0
         {
             timeSinceSpawned += Time.deltaTime;
 
-            if (timeSinceSpawned >= spawnTime)      //Then it spawns the arrows
+            if (timeSinceSpawned >= spawnTime) // Spawns the arrows
             {
-                Debug.Log("trap");
-                Instantiate(projectile, spawnLocation.position, spawnRotation);     //Spawns the selected projectile in selected position and rotation
-                timeSinceSpawned = 0;   //resets timer
+                Debug.Log("Arrow Shot");
+                Instantiate(projectile, spawnLocation.position, spawnRotation);  //Spawns the selected projectile in selected position and rotation
+                timeSinceSpawned = 0;   // Resets timer
             }
         }
 
         else
         { 
-            timeSinceSpawned = 0.5f;   //resets timer
+            timeSinceSpawned = 0.5f;   // Resets timer
         }
     }
 

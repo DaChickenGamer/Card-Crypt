@@ -8,9 +8,9 @@ public class Door : MonoBehaviour
         if ((collider.gameObject.tag == "Player") && (PlayerVariablesAndItems.keyCount > 0))
         {
             Debug.Log("Opened door");
-            openDoor.Play();
+            openDoor.Play(); // Plays the audio when opening up the door
             PlayerVariablesAndItems.keyCount--;
-            Destroy(gameObject);
+            Destroy(gameObject); // Destroys gate on the door
         }
     }
 }

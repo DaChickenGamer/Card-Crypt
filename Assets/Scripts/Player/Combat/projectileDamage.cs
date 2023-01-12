@@ -4,19 +4,21 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class projectileDamage : MonoBehaviour
+public class ProjectileDamage : MonoBehaviour
 {
         public void OnTriggerEnter2D(Collider2D hitInfo)
         {
-            EnemyBehaviour enemy = hitInfo.GetComponent<EnemyBehaviour>();
-            if (enemy != null)
+            EnemyHealth enemy = hitInfo.GetComponent<EnemyHealth>();
+            if (enemy != null) // Checks if there is an enemy
             {
-                enemy.TakeDamage((int)ShootScript.damage);
-                StartCoroutine(DelayedDoDestroy());
+                Debug.Log("Hit Enemy");
+                enemy.TakeDamage((int)ShootScript.damage); // If there is an enemy and a projectile it'll damage the enemy
+                StartCoroutine(DelayedDoDestroy()); // Delays the damage so you can't spam it
             }
             else if (hitInfo.gameObject.tag == "Walls")
             {
-                StartCoroutine(DelayedDoDestroy());
+                Debug.Log("Hit wall");
+                StartCoroutine(DelayedDoDestroy()); // Makes the projectile get destoryed when it touches a wall but it's delayed
             }
         }
         private IEnumerator DelayedDoDestroy()

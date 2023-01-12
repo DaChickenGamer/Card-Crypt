@@ -37,18 +37,18 @@ public class SettingsMenu : MonoBehaviour
     public void SetResolution (int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen); // Sets the resolution
     }
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioMixer.SetFloat("volume", volume); // Changes volume based on whta is picked
     }
     public void SetQuality(int qualityIndex)
     {
-        QualitySettings.SetQualityLevel(qualityIndex);
+        QualitySettings.SetQualityLevel(qualityIndex); // Changes the quality of the game
     }
     public void SetFullScreen(bool isFullScreen)
     {
-        Screen.fullScreen = isFullScreen;
+        Screen.fullScreen = isFullScreen; // Makes the game fullscreen
     }
 }

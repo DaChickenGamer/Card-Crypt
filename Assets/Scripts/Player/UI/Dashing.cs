@@ -19,8 +19,9 @@ public class Dashing : MonoBehaviour
         {
             ChangeAnimationState(DASH_WAITING);
         }
-        else if (MeleePlayer.dashCoolCounter <= 0 || MagicPlayer.dashCoolCounter <= 0 || RangedPlayer.dashCoolCounter <= 0)
+        else if (MeleePlayer.dashCoolCounter <= 0 || MagicPlayer.dashCoolCounter <= 0 || RangedPlayer.dashCoolCounter <= 0) // Checks if the dash timer is equal to 0 yet
         {
+            Debug.Log("Dash Ready");
             ChangeAnimationState(DASH_READY);
         }
 
@@ -29,12 +30,12 @@ public class Dashing : MonoBehaviour
     {
         if (currentState == newState) return;
 
-        //play new animation
+        // Plays new animation
         animator.Play(newState);
 
 
 
-        //Update current state
+        // Updates current state
         currentState = newState;
     }
 }

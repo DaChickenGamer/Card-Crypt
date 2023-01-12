@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public int[] items;
-    public GameObject[] slots;
+    public int[] items; // Creates an array for items
+    public GameObject[] slots; // Creates an array for slots
 }

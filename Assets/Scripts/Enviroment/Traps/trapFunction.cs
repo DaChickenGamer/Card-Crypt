@@ -16,48 +16,40 @@ public class trapFunction : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRend;
 
-    private bool triggered;  //When the trap gets triggered
-    private bool active;    //WHEN TRAP IS ACTIVE AND CAN DAMG PLAYER
+    private bool triggered;  // When the trap gets triggered
+    private bool active;    //When the trap is active and can hurt the player
 
-    private void Awake()    //references the aniamtor tool
+    private void Awake()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>(); // References the aniamtor tool
         spriteRend = GetComponent<SpriteRenderer>();
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Player")   //collision detectores for activating trap and activating damage
+        if (collider.gameObject.tag == "Player")   // Collision decets for active trap and active damage
         {
             if (!triggered)
-            {
-                //trigger trap
-                StartCoroutine(ActivateSpikeTrap());
-            }
+                StartCoroutine(ActivateSpikeTrap()); // Trigger trap with a delay
             if (active)
             {
-                //take damage
-                {
-                    GameManager.gameManager._playerHealth.Dmg(5);
-                }
+                Debug.Log("Trap Damaged Player");
+                GameManager.gameManager._playerHealth.Dmg(5); // Player Taking Damage
             }
-
-            
         }
     }
     private IEnumerator ActivateSpikeTrap()
     {
-        //Turn sptite red to check for player triggering it
+        Debug.Log("Trap Triggered");
+        //Turn sprite red to check for player triggering it
         triggered = true;
-        anim.SetBool("activateWarning", true);   //turn red to warn player 
+        anim.SetBool("activateWarning", true);   // Turns red to warn player
         LowSpike.Play();
-        //wait delay for treap to do damage
-        yield return new WaitForSeconds(activationDelay);
+        yield return new WaitForSeconds(activationDelay); // Delay for trap damage
         active = true;
         anim.SetBool("activateTrap", true);
         HighSpike.Play();
-        //Waits X sconds to deactivate trap
-        yield return new WaitForSeconds(activeTime);
+        yield return new WaitForSeconds(activeTime); //Waits to deactivate trap
         active = false;
         triggered = false;
         anim.SetBool("activateWarning", false);

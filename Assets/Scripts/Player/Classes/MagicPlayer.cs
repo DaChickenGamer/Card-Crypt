@@ -28,27 +28,22 @@ public class MagicPlayer : MonoBehaviour
     const string PLAYER_WALK_DOWN = "Magic_Down_With_Hands";
 
 
-    //this is to change the walk speed to the dash speed
+    // This is to change the walk speed to the dash speed
     public float activeMoveSpeed;
     public float dashSpeed = 5f;
-    //these are self explanitory
     public float dashLength = .3f, dashCooldown = 3.5f;
-    //these are use to make it so you cant spam the dash
+    // These are used to make it so you cant spam the dash
     public float dashCounter;
     public static float dashCoolCounter;
 
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Magic Player Selected");
         activeMoveSpeed = walkSpeed;
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     public void Update()
     {
 
@@ -62,14 +57,14 @@ public class MagicPlayer : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (dashCoolCounter <= 0 && dashCounter <= 0)
+            if (dashCoolCounter <= 0 && dashCounter <= 0) // Checks if the cooldown is over
             {
                 walkSpeed *= dashSpeed;
                 dashCounter = dashLength;
             }
         }
 
-        if (dashCounter > 0)
+        if (dashCounter > 0) // Lessens the cooldown timer
         {
             dashCounter -= Time.deltaTime;
 
@@ -78,15 +73,15 @@ public class MagicPlayer : MonoBehaviour
                 walkSpeed /= dashSpeed;
                 dashCoolCounter = dashCooldown;
                 if (walkSpeed != 4)
-                {
-                    walkSpeed = 4;
-                }
+                    walkSpeed = 4; // Makes it so you can't go over 4 speed
             }
         }
 
         if (dashCoolCounter > 0)
         {
             dashCoolCounter -= Time.deltaTime;
+            if (dashCoolCounter == 0)
+                Debug.Log("Dash Ready");
         }
     }
 
@@ -104,39 +99,24 @@ public class MagicPlayer : MonoBehaviour
 
             rb.velocity = new Vector2(inputHorizontal * activeMoveSpeed, inputVertical * activeMoveSpeed);
 
-
+            // Changes the animations based on the direction the character is facing
             if (inputHorizontal > 0 && inputVertical > 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_RIGHT_UP);
-            }
+            ChangeAnimationState(PLAYER_WALK_RIGHT_UP);
             else if (inputHorizontal < 0 && inputVertical > 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_LEFT_UP);
-            }
+            ChangeAnimationState(PLAYER_WALK_LEFT_UP);
             else if (inputHorizontal > 0 && inputVertical < 0)
-            {
-                ChangeAnimationState(PLAYER_WALK_RIGHT_DOWN);
-            }
+            ChangeAnimationState(PLAYER_WALK_RIGHT_DOWN);
             else if (inputHorizontal < 0 && inputVertical < 0)
-            {
                 ChangeAnimationState(PLAYER_WALK_LEFT_DOWN);
-            }
             else if (inputHorizontal < 0)
-            {
                 ChangeAnimationState(PLAYER_WALK_LEFT);
-            }
             else if (inputVertical > 0)
-            {
                 ChangeAnimationState(PLAYER_WALK_UP);
-            }
             else if (inputVertical < 0)
-            {
                 ChangeAnimationState(PLAYER_WALK_DOWN);
-            }
             else if (inputHorizontal > 0)
-            {
                 ChangeAnimationState(PLAYER_WALK_RIGHT);
-            }
+
         }
         else
         {
@@ -149,7 +129,7 @@ public class MagicPlayer : MonoBehaviour
             //Stop animation from interrupting itself
             if (currentState == newState) return;
 
-            //play new animation
+            // Plays new animation
             animator.Play(newState);
 
 

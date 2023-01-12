@@ -22,16 +22,16 @@ public class ShootScript : MonoBehaviour
 
     void Update()
     {
-        damage = Damage;
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        direction = mousePos - (Vector2)Weapon.position;//faces mouse
+        damage = Damage; // Converts the two damages
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Converts mouse position to screen position
+        direction = mousePos - (Vector2)Weapon.position; //Faces mouse
         FaceMouse();
 
         if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
             if(Time.time > ReadyForNextShot)
             {
-                Debug.Log("you can shoot");
+                Debug.Log("Player can shoot");
                 ReadyForNextShot = Time.time + 1/fireRate;
                 Shoot();
             }
@@ -44,9 +44,9 @@ public class ShootScript : MonoBehaviour
     }
     void Shoot()
     {
-        Debug.Log("you shot");
-        GameObject ProjectileIns = Instantiate(Projectile, ShootPoint.position, ShootPoint.rotation);
-        ProjectileIns.GetComponent<Rigidbody2D>().AddForce(ProjectileIns.transform.up * ProjectileSpeed);
-        Destroy(ProjectileIns, 3);
+        Debug.Log("Weapon fired");
+        GameObject ProjectileIns = Instantiate(Projectile, ShootPoint.position, ShootPoint.rotation); // Decides where the projectile spawns and how it rotates
+        ProjectileIns.GetComponent<Rigidbody2D>().AddForce(ProjectileIns.transform.up * ProjectileSpeed); // Decides how fast the projectile goes
+        Destroy(ProjectileIns, 3); // How long till the weapon gets destroyed after it shoots
     }
 }

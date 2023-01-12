@@ -8,12 +8,10 @@ public class HealthBar : MonoBehaviour
     private Image healthBar;
     void Start()
     {
-        healthBar = GetComponent<Image>();
+        healthBar = GetComponent<Image>(); // Gets the health bar image
     }
-
-    // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = Health._currentHealth/Health._currentMaxHealth;
+        healthBar.fillAmount = Health._currentHealth/Health._currentMaxHealth; // Changes the health bar based on the amount of health the player has
     }
 }

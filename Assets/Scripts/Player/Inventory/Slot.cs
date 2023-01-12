@@ -17,22 +17,23 @@ public class Slot : MonoBehaviour
     {
         inventory = GameObject.FindGameObjectWithTag("ItemPickupHitbox").GetComponent<Inventory>();
 
-        totalItems = hotbar.transform.childCount;
+        totalItems = hotbar.transform.childCount; // Finds the total amount of items based on the childern
         items = new GameObject[totalItems];
 
         for (int i = 0; i < totalItems; i++)
         {
-            items[i] = hotbar.transform.GetChild(i).gameObject;
+            items[i] = hotbar.transform.GetChild(i).gameObject; // Finds the items in the hotbar
             items[i].SetActive(false);
         }
 
         items[0].SetActive(true);
-        currentWeapon = items[0];
+        currentWeapon = items[0]; // Finds the current slot selected
         currentItemIndex = 0;
 
     }
     private void Update()
     {
+        // Drops item from slot when selected
         if ((isSelected == true) && Input.GetKeyDown(KeyCode.Q))
         {
             DropItem();
@@ -41,6 +42,7 @@ public class Slot : MonoBehaviour
                 inventory.items[index] = 0;
             }
         }
+        // Selects Hot Bar Slot
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             currentItemIndex = 0;

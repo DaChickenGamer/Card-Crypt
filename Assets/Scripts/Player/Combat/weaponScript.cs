@@ -5,22 +5,21 @@ using UnityEngine;
 
 public class weaponScript : MonoBehaviour
 {
-    int totalWeapons = 1;
+    int totalWeapons = 1; // Starting amount of weapons
     public int currentWeaponIndex;
 
     public GameObject[] weapons;
     public GameObject weaponHolder;
     public GameObject currentGun;
 
-    // Start is called before the first frame update
     void Start()
     {
-        totalWeapons = weaponHolder.transform.childCount;
-        weapons = new GameObject[totalWeapons];
+        totalWeapons = weaponHolder.transform.childCount; // Finds how many weapons there are
+        weapons = new GameObject[totalWeapons]; // Makes a arrary out of the weapons.
 
         for (int i = 0; i < totalWeapons; i++)
         {
-            weapons[i] = weaponHolder.transform.GetChild(i).gameObject;
+            weapons[i] = weaponHolder.transform.GetChild(i).gameObject; // Checks the Weapon Holder childern for weapons
             weapons[i].SetActive(false);
         }
 
@@ -29,14 +28,14 @@ public class weaponScript : MonoBehaviour
         currentWeaponIndex = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
     if (Input.GetKeyDown(KeyCode.E))
     {
-        // Next Wewapon
+        // Next Weapon
         if (currentWeaponIndex < totalWeapons-1)
         {
+            Debug.Log("Changed Weapon");
             weapons[currentWeaponIndex].SetActive(false);
             currentWeaponIndex += 1;
             weapons[currentWeaponIndex].SetActive(true);
@@ -47,6 +46,7 @@ public class weaponScript : MonoBehaviour
         // Previous Wewapon
         if (currentWeaponIndex > 0)
         {
+            Debug.Log("Changed Weapon");
             weapons[currentWeaponIndex].SetActive(false);
             currentWeaponIndex -= 1;
             weapons[currentWeaponIndex].SetActive(true);
