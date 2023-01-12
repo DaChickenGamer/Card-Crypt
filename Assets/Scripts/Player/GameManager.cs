@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     // Sets Max Health
     public Health _playerHealth = new Health(100, 100);
 
+    public gameState State;
+
     void Awake()
     {
         // Turns off if there is another Game Mananger.
@@ -20,4 +22,18 @@ public class GameManager : MonoBehaviour
             gameManager = this;
         }
     }
+    public void UpdateGameState(gameState newState)
+    {
+        State = newState;
+        switch (newState)
+        {
+            
+        }
+    }
+}
+
+public enum gameState
+{
+    PauseMenu,
+    Countine,
 }

@@ -10,29 +10,16 @@ public class Slot : MonoBehaviour
     GameObject hotbar;
     int totalItems = 1;
     public int currentItemIndex;
-    public GameObject currentWeapon;
     public GameObject[] items;
 
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("ItemPickupHitbox").GetComponent<Inventory>();
-
-        totalItems = hotbar.transform.childCount; // Finds the total amount of items based on the childern
-        items = new GameObject[totalItems];
-
-        for (int i = 0; i < totalItems; i++)
-        {
-            items[i] = hotbar.transform.GetChild(i).gameObject; // Finds the items in the hotbar
-            items[i].SetActive(false);
-        }
-
-        items[0].SetActive(true);
-        currentWeapon = items[0]; // Finds the current slot selected
-        currentItemIndex = 0;
-
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+            Debug.Log("You're on index " + currentItemIndex);
         // Drops item from slot when selected
         if ((isSelected == true) && Input.GetKeyDown(KeyCode.Q))
         {
@@ -49,19 +36,19 @@ public class Slot : MonoBehaviour
             Debug.Log("Slot 1 Selected");
             isSelected = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             currentItemIndex = 1;
             Debug.Log("Slot 2 Selected");
             isSelected = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             currentItemIndex = 2;
             Debug.Log("Slot 3 Selected");
             isSelected = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
+         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             currentItemIndex = 3;
             Debug.Log("Slot 4 Selected");
@@ -72,8 +59,12 @@ public class Slot : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            child.GetComponent<ItemDrop>().SpawnDroppedItem();
-            GameObject.Destroy(child.gameObject);
+            Transform selectedChild = transform.GetChild(currentItemIndex);
+            if (isSelected == true)
+            {
+                selectedChild.GetComponent<ItemDrop>().SpawnDroppedItem();
+                GameObject.Destroy(child.gameObject);
+            }
         }
     }
 }

@@ -21,7 +21,6 @@ public class Dashing : MonoBehaviour
         }
         else if (MeleePlayer.dashCoolCounter <= 0 || MagicPlayer.dashCoolCounter <= 0 || RangedPlayer.dashCoolCounter <= 0) // Checks if the dash timer is equal to 0 yet
         {
-            Debug.Log("Dash Ready");
             ChangeAnimationState(DASH_READY);
         }
 

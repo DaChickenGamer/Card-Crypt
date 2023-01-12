@@ -18,13 +18,14 @@ public class DatabaseTest : MonoBehaviour
         dbconn = (IDbConnection)new SqliteConnection(conn);
         dbconn.Open(); //Open connection to the database.
         IDbCommand dbcmd = dbconn.CreateCommand();
-        string sqlQuery = "SELECT coins, keys " + "FROM player";
+        string sqlQuery = "SELECT coins, keys, currentlevel" + "FROM player";
         dbcmd.CommandText = sqlQuery;
         IDataReader reader = dbcmd.ExecuteReader();
         while (reader.Read())
         {
             PlayerVariablesAndItems.CoinCount = reader.GetInt32(0);
             PlayerVariablesAndItems.keyCount = reader.GetInt32(1);
+            ChangeScene.PlayerScene = reader.GetInt32(2);
         }
         reader.Close();
         reader = null;
@@ -47,7 +48,7 @@ public class DatabaseTest : MonoBehaviour
             return;
         }
         IDbCommand dbcmd = dbconn.CreateCommand();
-        string sqlQuery = "INSERT INTO player (coins, keys) VALUES(" + PlayerVariablesAndItems.CoinCount + "," + PlayerVariablesAndItems.keyCount + ")";
+        string sqlQuery = "INSERT INTO player (coins, keys, currentlevel) VALUES(" + PlayerVariablesAndItems.CoinCount + "," + PlayerVariablesAndItems.keyCount + "," + ChangeScene.PlayerScene + ")";
         dbcmd.CommandText = sqlQuery;
         try
         {
