@@ -127,6 +127,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  currentItemIndex: 0
+  currentWeapon: {fileID: 0}
+  items: []
 --- !u!1 &1017373368
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +220,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  currentItemIndex: 0
+  currentWeapon: {fileID: 0}
+  items: []
 --- !u!1 &1142508001
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,6 +313,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  currentItemIndex: 0
+  currentWeapon: {fileID: 0}
+  items: []
 --- !u!1 &1155878611
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +557,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  currentItemIndex: 0
+  currentWeapon: {fileID: 0}
+  items: []
 --- !u!1 &3994945524000441750
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,6 +2261,7 @@ GameObject:
   - component: {fileID: 7497678351419015225}
   - component: {fileID: 7497678351419015230}
   - component: {fileID: 3041345381393048644}
+  - component: {fileID: 192069386545288745}
   m_Layer: 0
   m_Name: UiNumberManager
   m_TagString: Untagged
@@ -2302,6 +2315,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FpsText: {fileID: 4449931889624269934}
+--- !u!114 &192069386545288745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7497678351419015231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c528f0146589e14b8f7bee70a4f399b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7806742584278775376
 GameObject:
   m_ObjectHideFlags: 0

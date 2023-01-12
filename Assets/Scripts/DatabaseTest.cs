@@ -8,35 +8,61 @@ public class DatabaseTest : MonoBehaviour
 {
     private void Start()
     {
+       AddPlayer();
        ReadDatabase();
     }
-
     void ReadDatabase()
     {
-            string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
-            IDbConnection dbconn;
-            dbconn = (IDbConnection)new SqliteConnection(conn);
-            dbconn.Open(); //Open connection to the database.
-            IDbCommand dbcmd = dbconn.CreateCommand();
-            string sqlQuery = "SELECT username, password " + "FROM user";
-            //sqlQuery = "SELECT coins, health, items " + "FROM player";
+        string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
+        IDbConnection dbconn;
+        dbconn = (IDbConnection)new SqliteConnection(conn);
+        dbconn.Open(); //Open connection to the database.
+        IDbCommand dbcmd = dbconn.CreateCommand();
+        string sqlQuery = "SELECT coins, keys " + "FROM player";
         dbcmd.CommandText = sqlQuery;
-            IDataReader reader = dbcmd.ExecuteReader();
-            while(reader.Read())
-            {
-                //int coins = reader.GetInt32(0);
-                //int health = reader.GetInt32(2);
-                //int items = reader.GetInt32(3);
-                string username = reader.GetString(0);
-                string password = reader.GetString(1);
+        IDataReader reader = dbcmd.ExecuteReader();
+        while (reader.Read())
+        {
+            PlayerVariablesAndItems.CoinCount = reader.GetInt32(0);
+            PlayerVariablesAndItems.keyCount = reader.GetInt32(1);
+        }
+        reader.Close();
+        reader = null;
+        dbconn.Close();
+        dbconn = null;
+    }
 
-            Debug.Log("Username: " + username + "  Password: " + password);
-            }
+    public static void AddPlayer()
+    {
+        string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
+        IDbConnection dbconn;
+        dbconn = (IDbConnection)new SqliteConnection(conn);
+        try
+        {
+            dbconn.Open(); //Open connection to the database.
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Error opening the database: " + e.Message);
+            return;
+        }
+        IDbCommand dbcmd = dbconn.CreateCommand();
+        string sqlQuery = "INSERT INTO player (coins, keys) VALUES(" + PlayerVariablesAndItems.CoinCount + "," + PlayerVariablesAndItems.keyCount + ")";
+        dbcmd.CommandText = sqlQuery;
+        try
+        {
+            IDataReader reader = dbcmd.ExecuteReader();
             reader.Close();
             reader = null;
             dbcmd.Dispose();
             dbcmd = null;
             dbconn.Close();
             dbconn = null;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Error executing the query: " + e.Message);
+        }
+        Debug.Log("Data added to the database successfully.");
     }
 }

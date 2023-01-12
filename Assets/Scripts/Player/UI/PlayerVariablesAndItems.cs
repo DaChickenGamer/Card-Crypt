@@ -14,6 +14,19 @@ public class PlayerVariablesAndItems : MonoBehaviour
     public Text Coins;
     public Text Keys;
     public Text Damage;
+    public void AddCoins(int value)
+    {
+        CoinCount += value;
+        Debug.Log("Adding " + value + " coins.");
+        DatabaseTest.AddPlayer();
+    }
+    public void AddKeys(int value)
+    {
+        keyCount += value;
+        Debug.Log("Adding " + value + " keys.");
+        DatabaseTest.AddPlayer();
+    }
+
     void Update()
     {
         Coins.text = CoinCount.ToString(); // Displays the amount of coins
