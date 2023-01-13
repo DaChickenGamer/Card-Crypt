@@ -334,8 +334,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mouse
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -952125955849319133, guid: 5fa4f09223a2fe148a2b70aeddd66a08, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa4f09223a2fe148a2b70aeddd66a08, type: 3}
 --- !u!1 &509459751
 GameObject:
@@ -577,7 +576,6 @@ GameObject:
   - component: {fileID: 797089999}
   - component: {fileID: 797089998}
   - component: {fileID: 797089997}
-  - component: {fileID: 797090001}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -671,18 +669,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &797090001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797089996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c528f0146589e14b8f7bee70a4f399b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &854960572
 GameObject:
   m_ObjectHideFlags: 0
