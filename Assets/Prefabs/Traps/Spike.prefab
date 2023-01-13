@@ -149,3 +149,4 @@ MonoBehaviour:
   activeTime: 0.5
   HighSpike: {fileID: 562911876186498283, guid: 5883d4d3b8943584382d342766e502a6, type: 3}
   LowSpike: {fileID: 8990444920699862483, guid: df27240edb898004b8fb29da09c5777b, type: 3}
+  trapdamage: 5

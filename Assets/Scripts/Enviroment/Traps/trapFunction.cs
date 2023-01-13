@@ -16,6 +16,7 @@ public class trapFunction : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRend;
 
+    public int trapdamage=5;
     private bool triggered;  // When the trap gets triggered
     private bool active;    //When the trap is active and can hurt the player
 
@@ -29,13 +30,18 @@ public class trapFunction : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")   // Collision decets for active trap and active damage
         {
-            if (!triggered)
-                StartCoroutine(ActivateSpikeTrap()); // Trigger trap with a delay
             if (active)
             {
                 Debug.Log("Trap Damaged Player");
-                GameManager.gameManager._playerHealth.Dmg(5); // Player Taking Damage
+                if(collider.gameObject.tag=="Player")
+                GameManager.gameManager._playerHealth.Dmg(trapdamage); // Player Taking Damage
             }
+            if (!triggered)
+            {
+                StartCoroutine(ActivateSpikeTrap()); // Trigger trap with a delay
+                Debug.Log("Spike trap event start");
+            }
+            
         }
     }
     private IEnumerator ActivateSpikeTrap()
