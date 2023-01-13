@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyPickupAndDestroy : MonoBehaviour
+public class Key : MonoBehaviour
 {
     public AudioSource CollectKey;
     void OnTriggerEnter2D(Collider2D collider)

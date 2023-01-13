@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,13 @@ public class HealthBar : MonoBehaviour
     }
     void Update()
     {
-        healthBar.fillAmount = Health._currentHealth/Health._currentMaxHealth; // Changes the health bar based on the amount of health the player has
+        try
+        {
+            healthBar.fillAmount = Health._currentHealth / Health._currentMaxHealth;// Changes the health bar based on the amount of health the player has
+        }
+        catch(Exception ex)
+        {
+            Debug.LogException(ex);
+        }
     }
 }
