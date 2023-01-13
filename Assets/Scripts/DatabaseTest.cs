@@ -9,42 +9,70 @@ public class DatabaseTest : MonoBehaviour
     private PlayerVariablesAndItems player;
     void Start()
     {
+        AddPlayer();
         ReadDatabase();
     }
 
     public void SaveGame()
     {
+        string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
+        IDbConnection dbconn;
+        dbconn = (IDbConnection)new SqliteConnection(conn);
+        dbconn.Open(); //Open connection to the database.
+        IDbCommand dbcmd = dbconn.CreateCommand();
+        string sqlQuery = "SELECT coins, keys, currentlevel" + "FROM player";
+        dbcmd.CommandText = sqlQuery;
+        IDataReader reader = dbcmd.ExecuteReader();
+        while (reader.Read())
+        {
+            PlayerVariablesAndItems.CoinCount = reader.GetInt32(0);
+            PlayerVariablesAndItems.keyCount = reader.GetInt32(1);
+            ChangeScene.PlayerScene = reader.GetInt32(2);
+        }
+        reader.Close();
+        reader = null;
+        dbconn.Close();
+        dbconn = null;
         AddPlayer();
     }
 
-    void ReadDatabase()
+    public static void AddPlayer()
     {
-            string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
-            IDbConnection dbconn;
-            dbconn = (IDbConnection)new SqliteConnection(conn);
+        string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
+        IDbConnection dbconn;
+        dbconn = (IDbConnection)new SqliteConnection(conn);
+        try
+        {
             dbconn.Open(); //Open connection to the database.
-            IDbCommand dbcmd = dbconn.CreateCommand();
-            string sqlQuery = "SELECT username, password " + "FROM user";
-            IDataReader reader = dbcmd.ExecuteReader();
-            while(reader.Read())
-            {
-                //int coins = reader.GetInt32(0);
-                //int health = reader.GetInt32(2);
-                //int items = reader.GetInt32(3);
-                string username = reader.GetString(0);
-                string password = reader.GetString(1);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Error opening the database: " + e.Message);
+            return;
+        }
+        IDbCommand dbcmd = dbconn.CreateCommand();
+        string sqlQuery = "SELECT id, coins, keys, currentlevel, health, playertype" + "FROM player";
+        string updateQuery = "UPDATE player SET coins, keys, currentlevel, health, playertype = " + PlayerVariablesAndItems.CoinCount + ", keys = " + PlayerVariablesAndItems.keyCount + " WHERE id = " + PlayerVariablesAndItems.ID;
 
-            Debug.Log("Username: " + username + "  Password: " + password);
-            }
+        dbcmd.CommandText = sqlQuery;
+        try
+        {
+            IDataReader reader = dbcmd.ExecuteReader();
             reader.Close();
             reader = null;
             dbcmd.Dispose();
             dbcmd = null;
             dbconn.Close();
             dbconn = null;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError("Error executing the query: " + e.Message);
+        }
+        Debug.Log("Data added to the database successfully.");
     }
 
-    public static void AddPlayer()
+    void ReadDatabase()
     {
         string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
         IDbConnection dbconn;
