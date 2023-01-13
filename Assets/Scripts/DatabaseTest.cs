@@ -9,9 +9,6 @@ public class DatabaseTest : MonoBehaviour
     private PlayerVariablesAndItems player;
     void Start()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         ReadDatabase();
     }
 
@@ -19,27 +16,6 @@ public class DatabaseTest : MonoBehaviour
     {
         AddPlayer();
     }
-    public static void AddPlayer()
-    {
-        string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
-        IDbConnection dbconn;
-        dbconn = (IDbConnection)new SqliteConnection(conn);
-        try
-        {
-            dbconn.Open(); //Open connection to the database.
-        }
-        catch (System.Exception e)
-        {
-            Debug.LogError("Error opening the database: " + e.Message);
-            return;
-        }
-        IDbCommand dbcmd = dbconn.CreateCommand();
-        string sqlQuery = "SELECT id, coins, keys, currentlevel, health, playertype" + "FROM player";
-        string updateQuery = "UPDATE player SET coins, keys, currentlevel, health, playertype = " + PlayerVariablesAndItems.CoinCount + ", keys = " + PlayerVariablesAndItems.keyCount + " WHERE id = " + PlayerVariablesAndItems.ID;
-
-=======
-       ReadDatabase();
-    }
 
     void ReadDatabase()
     {
@@ -49,37 +25,6 @@ public class DatabaseTest : MonoBehaviour
             dbconn.Open(); //Open connection to the database.
             IDbCommand dbcmd = dbconn.CreateCommand();
             string sqlQuery = "SELECT username, password " + "FROM user";
-            //sqlQuery = "SELECT coins, health, items " + "FROM player";
->>>>>>> parent of ad692a5 (Almost Working Database)
-=======
-       ReadDatabase();
-    }
-
-    void ReadDatabase()
-    {
-            string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
-            IDbConnection dbconn;
-            dbconn = (IDbConnection)new SqliteConnection(conn);
-            dbconn.Open(); //Open connection to the database.
-            IDbCommand dbcmd = dbconn.CreateCommand();
-            string sqlQuery = "SELECT username, password " + "FROM user";
-            //sqlQuery = "SELECT coins, health, items " + "FROM player";
->>>>>>> parent of ad692a5 (Almost Working Database)
-=======
-       ReadDatabase();
-    }
-
-    void ReadDatabase()
-    {
-            string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
-            IDbConnection dbconn;
-            dbconn = (IDbConnection)new SqliteConnection(conn);
-            dbconn.Open(); //Open connection to the database.
-            IDbCommand dbcmd = dbconn.CreateCommand();
-            string sqlQuery = "SELECT username, password " + "FROM user";
-            //sqlQuery = "SELECT coins, health, items " + "FROM player";
->>>>>>> parent of ad692a5 (Almost Working Database)
-        dbcmd.CommandText = sqlQuery;
             IDataReader reader = dbcmd.ExecuteReader();
             while(reader.Read())
             {
@@ -97,11 +42,9 @@ public class DatabaseTest : MonoBehaviour
             dbcmd = null;
             dbconn.Close();
             dbconn = null;
-<<<<<<< HEAD
-<<<<<<< HEAD
     }
 
-    void ReadDatabase()
+    public static void AddPlayer()
     {
         string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
         IDbConnection dbconn;
@@ -124,9 +67,5 @@ public class DatabaseTest : MonoBehaviour
         reader = null;
         dbconn.Close();
         dbconn = null;
-=======
->>>>>>> parent of ad692a5 (Almost Working Database)
-=======
->>>>>>> parent of ad692a5 (Almost Working Database)
     }
 }
