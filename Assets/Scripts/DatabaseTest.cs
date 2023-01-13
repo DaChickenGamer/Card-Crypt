@@ -10,6 +10,8 @@ public class DatabaseTest : MonoBehaviour
     void Start()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         ReadDatabase();
     }
 
@@ -49,6 +51,34 @@ public class DatabaseTest : MonoBehaviour
             string sqlQuery = "SELECT username, password " + "FROM user";
             //sqlQuery = "SELECT coins, health, items " + "FROM player";
 >>>>>>> parent of ad692a5 (Almost Working Database)
+=======
+       ReadDatabase();
+    }
+
+    void ReadDatabase()
+    {
+            string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
+            IDbConnection dbconn;
+            dbconn = (IDbConnection)new SqliteConnection(conn);
+            dbconn.Open(); //Open connection to the database.
+            IDbCommand dbcmd = dbconn.CreateCommand();
+            string sqlQuery = "SELECT username, password " + "FROM user";
+            //sqlQuery = "SELECT coins, health, items " + "FROM player";
+>>>>>>> parent of ad692a5 (Almost Working Database)
+=======
+       ReadDatabase();
+    }
+
+    void ReadDatabase()
+    {
+            string conn = "URI=file:" + Application.dataPath + "/Database.db"; //Path to database.
+            IDbConnection dbconn;
+            dbconn = (IDbConnection)new SqliteConnection(conn);
+            dbconn.Open(); //Open connection to the database.
+            IDbCommand dbcmd = dbconn.CreateCommand();
+            string sqlQuery = "SELECT username, password " + "FROM user";
+            //sqlQuery = "SELECT coins, health, items " + "FROM player";
+>>>>>>> parent of ad692a5 (Almost Working Database)
         dbcmd.CommandText = sqlQuery;
             IDataReader reader = dbcmd.ExecuteReader();
             while(reader.Read())
@@ -67,6 +97,8 @@ public class DatabaseTest : MonoBehaviour
             dbcmd = null;
             dbconn.Close();
             dbconn = null;
+<<<<<<< HEAD
+<<<<<<< HEAD
     }
 
     void ReadDatabase()
@@ -92,5 +124,9 @@ public class DatabaseTest : MonoBehaviour
         reader = null;
         dbconn.Close();
         dbconn = null;
+=======
+>>>>>>> parent of ad692a5 (Almost Working Database)
+=======
+>>>>>>> parent of ad692a5 (Almost Working Database)
     }
 }
