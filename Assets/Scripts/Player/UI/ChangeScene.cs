@@ -18,12 +18,12 @@ public class ChangeScene : MonoBehaviour
     }
     public void Pause()
     {
-        pauseMenu.SetActive(true);
+        //pauseMenu.SetActive(true);
         Time.timeScale = 0f; // Makes it so nothing can move
     }
     public void Resume()
     {
-        pauseMenu.SetActive(false);
+        //pauseMenu.SetActive(false);
         Time.timeScale = 1f;
     }
     public void Home()
@@ -35,9 +35,11 @@ public class ChangeScene : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) // Goes to pause menu when clicking escape
         {
-            pauseMenu.SetActive(true);
-            Time.timeScale = 0f;
+            Pause();
         }
-
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            Resume();
+        }
     }
 }
