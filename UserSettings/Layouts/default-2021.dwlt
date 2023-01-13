@@ -163,7 +163,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1564
+=======
+    width: 1519
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 947
   m_MinSize: {x: 200, y: 300}
   m_MaxSize: {x: 16192, y: 24288}
@@ -188,7 +192,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1564
+=======
+    width: 1519
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 631
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
@@ -213,12 +221,20 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 538
+=======
+    width: 523
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 631
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 131
+=======
+  controlID: 126
+>>>>>>> parent of ad692a5 (Almost Working Database)
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -236,7 +252,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 538
+=======
+    width: 523
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 314
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -262,10 +282,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 314
+<<<<<<< HEAD
     width: 538
     height: 317
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    width: 523
+    height: 317
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of ad692a5 (Almost Working Database)
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -288,7 +315,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 538
     y: 0
+<<<<<<< HEAD
     width: 1026
+=======
+    width: 996
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 631
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -318,7 +349,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 631
+<<<<<<< HEAD
     width: 1564
+=======
+    width: 1519
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 316
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -328,7 +363,11 @@ MonoBehaviour:
   - {fileID: 24}
   - {fileID: 17}
   m_Selected: 0
+<<<<<<< HEAD
   m_LastSelected: 1
+=======
+  m_LastSelected: 0
+>>>>>>> parent of ad692a5 (Almost Working Database)
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -339,24 +378,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: SpriteEditorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 1564
     y: 0
+<<<<<<< HEAD
     width: 356
     height: 947
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 26}
+=======
+    width: 401
+    height: 947
+  m_MinSize: {x: 361, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 27}
+>>>>>>> parent of ad692a5 (Almost Working Database)
   m_Panes:
   - {fileID: 26}
   - {fileID: 27}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -695,7 +742,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
+<<<<<<< HEAD
     width: 537
+=======
+    width: 522
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 293
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -706,7 +757,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 169a0000
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 2055fdffde8dffffea90fffffc91ffff8894ffff309affffbc9cffff7ca4ffff78b0ffffb6f5ffff0afbffff44ef000050ef000066ef0000c8ef0000d4ef0000d8ef0000f2ef0000faef0000feef000014f0000032f000005cf0000064f0000074f00000
+=======
+      m_ExpandedIDs: 02fbffff
+>>>>>>> parent of ad692a5 (Almost Working Database)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: SilverCoin
@@ -752,7 +807,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 387
+<<<<<<< HEAD
     width: 537
+=======
+    width: 522
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 296
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -918,7 +977,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 538
     y: 73
+<<<<<<< HEAD
     width: 1024
+=======
+    width: 994
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 610
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1143,9 +1206,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 48.61151, y: -14.517577, z: -123.283325}
     speed: 2
     m_Value: {x: 48.61151, y: -14.517577, z: -123.283325}
+=======
+    m_Target: {x: 973.00006, y: 494, z: 100}
+    speed: 2
+    m_Value: {x: 973.00006, y: 494, z: 100}
+>>>>>>> parent of ad692a5 (Almost Working Database)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1196,9 +1265,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 9.694456
     speed: 2
     m_Value: 9.694456
+=======
+    m_Target: 117.79015
+    speed: 2
+    m_Value: 117.79015
+>>>>>>> parent of ad692a5 (Almost Working Database)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1245,7 +1320,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 538
     y: 73
+<<<<<<< HEAD
     width: 1024
+=======
+    width: 994
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 610
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1295,16 +1374,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 1024
       height: 589
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 512, y: 294.5}
+=======
+      width: 994
+      height: 589
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 497, y: 294.5}
+>>>>>>> parent of ad692a5 (Almost Working Database)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -512
       y: -294.5
       width: 1024
@@ -1312,6 +1399,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1024, y: 610}
+=======
+      x: -497
+      y: -294.5
+      width: 994
+      height: 589
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 994, y: 610}
+>>>>>>> parent of ad692a5 (Almost Working Database)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1339,7 +1435,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 704
+<<<<<<< HEAD
     width: 1563
+=======
+    width: 1518
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 295
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1358,22 +1458,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes/Main Scenes
+=======
+    - Assets/Scenes
+>>>>>>> parent of ad692a5 (Almost Working Database)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Scenes/Main Scenes
   m_LastFoldersGridSize: 96
+=======
+  - Assets/Scenes
+  m_LastFoldersGridSize: 64
+>>>>>>> parent of ad692a5 (Almost Working Database)
   m_LastProjectPath: C:\Users\24WillmoreH\Card-Dungeon-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 95}
     m_SelectedIDs: e47b0000
     m_LastClickedID: 31716
     m_ExpandedIDs: 000000001c7a00001e7a0000207a0000227a0000267a0000de7b0000ea7b0000a0910000a4910000a8910000
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 907b0000
+    m_LastClickedID: 31632
+    m_ExpandedIDs: 00000000c6790000c8790000ca790000cc790000ce790000d0790000
+>>>>>>> parent of ad692a5 (Almost Working Database)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Animations
@@ -1401,7 +1517,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000187a00001a7a00001c7a00001e7a0000207a0000227a0000247a0000267a0000
+=======
+    m_ExpandedIDs: 00000000c6790000c8790000ca790000cc790000ce790000d0790000
+>>>>>>> parent of ad692a5 (Almost Working Database)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1428,8 +1548,13 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000707100006c850000a06e0000f6a20000b47700007ce600001a7b0000ac7d0000627e000000000000a0b8000040b60000447600000083000068fd0000
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000707100006c850000a06e0000f6a20000b47700007ce600001a7b0000ac7d0000627e000000000000a0b8000040b6000044760000
+>>>>>>> parent of ad692a5 (Almost Working Database)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1445,7 +1570,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 13}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1479,7 +1604,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 704
+<<<<<<< HEAD
     width: 1563
+=======
+    width: 1518
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 295
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1515,7 +1644,11 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: 51898
+=======
+  m_LastSelectedObjectID: 39288
+>>>>>>> parent of ad692a5 (Almost Working Database)
 --- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1538,7 +1671,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1564
     y: 73
+<<<<<<< HEAD
     width: 355
+=======
+    width: 400
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1579,7 +1716,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1564
     y: 73
+<<<<<<< HEAD
     width: 355
+=======
+    width: 400
+>>>>>>> parent of ad692a5 (Almost Working Database)
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
