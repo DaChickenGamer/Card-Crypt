@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 21430956202960420}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &21430955703602317
 MonoBehaviour:
@@ -42,13 +42,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 21430955703602319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3cfe808fb4f5f444a6eb3c2049d513e, type: 3}
+  m_Script: {fileID: 11500000, guid: b3eb0e22dc3b21846a1742d1b8ef15d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 100
-  enemyDamage: 10
-  XP: {fileID: 4391881931660903072}
-  spawnLocation: {fileID: 21430956202960420}
+  enemyDamage: 1
+  XP: {fileID: 0}
+  spawnLocation: {fileID: 0}
   spawnRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!58 &21430955703602316
 CircleCollider2D:
@@ -76,12 +76,11 @@ GameObject:
   m_Component:
   - component: {fileID: 21430956202960420}
   - component: {fileID: 6842107179862721541}
-  - component: {fileID: 451477989173638524}
   - component: {fileID: 3346568740951925102}
   - component: {fileID: 7296239778548255594}
   - component: {fileID: 4688806055266149342}
   m_Layer: 0
-  m_Name: enemy (1)
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +98,6 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1737795283941735252}
   - {fileID: 21430955703602318}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -156,23 +154,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &451477989173638524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4391881931660903072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef3c23cc945e33479591247084f9ee3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 0
-  speed: 2.5
-  XP: {fileID: 7293901867960711115, guid: b55a702cf5f8fb646a52b5883d1b332c, type: 3}
-  spawnLocation: {fileID: 21430956202960420}
-  spawnRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!58 &3346568740951925102
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -226,50 +207,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.03
---- !u!1 &4531193539570237161
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1737795283941735252}
-  - component: {fileID: 5853195235017642358}
-  m_Layer: 0
-  m_Name: Raycast
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1737795283941735252
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4531193539570237161}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 21430956202960420}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5853195235017642358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4531193539570237161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b85dd5a21dabc94393c1dcb9597b243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 80
-  visionDistance: 3
-  lineOfSight: {fileID: 7024543611538131044, guid: b5f2365ce6b83964bb28e7278f9f5c03, type: 3}
