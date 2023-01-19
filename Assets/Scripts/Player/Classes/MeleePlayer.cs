@@ -24,7 +24,7 @@ public class MeleePlayer : MonoBehaviour
     const string PLAYER_WALK_UP = "Melee_Up_With_Hands";
     const string PLAYER_WALK_RIGHT_UP = "Melee_Up_Right_With_Hands";
     const string PLAYER_WALK_RIGHT = "Melee_Right_With_Hands";
-    const string PLAYER_WALK_RIGHT_DOWN = "Melee_Down_Righ_With_Hands";
+    const string PLAYER_WALK_RIGHT_DOWN = "Melee_Down_Right_With_Hands";
     const string PLAYER_WALK_DOWN = "Melee_Down_With_Hands";
 
 

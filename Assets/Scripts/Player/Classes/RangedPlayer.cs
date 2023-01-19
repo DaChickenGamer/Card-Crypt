@@ -24,7 +24,7 @@ public class RangedPlayer : MonoBehaviour
     const string PLAYER_WALK_UP = "Ranged_Up_With_Hands";
     const string PLAYER_WALK_RIGHT_UP = "Ranged_Up_Right_With_Hands";
     const string PLAYER_WALK_RIGHT = "Ranged_Right_With_Hands";
-    const string PLAYER_WALK_RIGHT_DOWN = "Ranged_Down_Right_With_Hands";
+    const string PLAYER_WALK_RIGHT_DOWN = "Ranged_Down_Right_With_hands";
     const string PLAYER_WALK_DOWN = "Ranged_Down_With_Hands";
 
 
