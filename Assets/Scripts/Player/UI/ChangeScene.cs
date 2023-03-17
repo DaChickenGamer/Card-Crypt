@@ -9,7 +9,6 @@ public class ChangeScene : MonoBehaviour
     public void MoveToScene(int sceneID) // Changes scene based on the sceneID
     {
         SceneManager.LoadScene(sceneID);
-        DatabaseTest.AddPlayer();
     }
     [SerializeField] GameObject pauseMenu;
     public void PlayerSceneDetector()
