@@ -22,9 +22,6 @@ EditorBuildSettings:
     guid: 85f906d91b8815543b75e184d02b7535
   - enabled: 1
     path: Assets/Scenes/Game Levels/Tutorial.unity
-    guid: 7e04c7e8134f837439ea7cd272969ba2
-  - enabled: 1
-    path: Assets/Scenes/Game Levels/FirstLevel.unity
-    guid: b8d920ed02305c44fbcf8351eef9ecd1
+    guid: 281056a274f782c4283bf398466e853b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 872c1402e26af594da2b774f8b4c65b6, type: 2}
