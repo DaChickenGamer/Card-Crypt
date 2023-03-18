@@ -28,7 +28,7 @@ public class TrapProjectile : MonoBehaviour
         if (tag == "Player")
         {
             Debug.Log("Trap Damaging Player");
-            GameManager.gameManager._playerHealth.Dmg(20); // Damages The Player
+            GameManager.gameManager.healthAmount.Dmg(20); // Damages The Player
         }
     }
 }

@@ -34,7 +34,7 @@ public class trapFunction : MonoBehaviour
             {
                 Debug.Log("Trap Damaged Player");
                 if(collider.gameObject.tag=="Player")
-                GameManager.gameManager._playerHealth.Dmg(trapdamage); // Player Taking Damage
+                GameManager.gameManager.healthAmount.Dmg(trapdamage); // Player Taking Damage
             }
             if (!triggered)
             {

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager gameManager { get; set; }
+    public static GameManager gameManager { get; private set; }
     // Sets Max Health
-    public Health _playerHealth = new Health(100, 100);
+    public Health healthAmount = new Health(100, 100);
 
     public gameState State;
 
@@ -22,14 +22,14 @@ public class GameManager : MonoBehaviour
             gameManager = this;
         }
     }
-    public void UpdateGameState(gameState newState)
+    /*public void UpdateGameState(gameState newState)
     {
         State = newState;
         switch (newState)
         {
             
         }
-    }
+    }*/
 }
 
 public enum gameState

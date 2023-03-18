@@ -5,12 +5,12 @@ using UnityEngine;
 public class Health
 {
     // Fields
-    public static float _currentHealth;
-    public static float _currentMaxHealth;
+    private static float _currentHealth;
+    private static float _currentMaxHealth;
     // _ is a naming convention on fields
 
     // Properties
-    public float healthAmount
+    public float playerHealthAmount
     {
         // Sets the value for health
         get
@@ -27,11 +27,22 @@ public class Health
         // Sets the value for Max health
         get
         {
-            return _currentHealth;
+            return _currentMaxHealth;
         }
         set
         {
-            _currentHealth = value;
+            _currentMaxHealth = value;
+        }
+    }
+    public float healthFillAmount
+    {
+        get
+        {
+            return _currentHealth / _currentMaxHealth;
+        }
+        set
+        {
+            healthFillAmount = value;
         }
     }
     // Constructor

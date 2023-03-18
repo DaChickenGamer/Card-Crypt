@@ -818,7 +818,6 @@ GameObject:
   - component: {fileID: 7497678349865426642}
   - component: {fileID: 7497678349865426643}
   - component: {fileID: 7497678349865426640}
-  - component: {fileID: 21124471637153420}
   - component: {fileID: -588137216253253649}
   m_Layer: 8
   m_Name: MagicPlayer
@@ -978,24 +977,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &21124471637153420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7497678349865426646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d52a8714228f7841bac7bcd8799519d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedLimiter: 0.55
-  activeMoveSpeed: 0
-  dashSpeed: 5
-  dashLength: 0.3
-  dashCooldown: 3.5
-  dashCounter: 0
 --- !u!114 &-588137216253253649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2161,7 +2142,6 @@ MonoBehaviour:
   level: {fileID: 0}
   spawnLocation: {fileID: 0}
   spawnRotation: {x: 0, y: 0, z: 0, w: 0}
-  database: {fileID: 0}
   Coins: {fileID: 7497678349422365636}
   Keys: {fileID: 7497678351342741849}
   Damage: {fileID: 0}

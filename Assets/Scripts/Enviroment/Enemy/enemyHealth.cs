@@ -37,6 +37,6 @@ public class EnemyHealth : MonoBehaviour
         startingAttack = true;
         yield return new WaitForSeconds(.1f); // How long the delay is
         startingAttack = false;
-        GameManager.gameManager._playerHealth.Dmg(enemyDamage); // Triggers the enemy damage
+        GameManager.gameManager.healthAmount.Dmg(enemyDamage); // Triggers the enemy damage
     }
 }
